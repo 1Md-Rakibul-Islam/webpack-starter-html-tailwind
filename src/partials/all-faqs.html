@@ -1,0 +1,71 @@
+<section class="section-py">
+  <div class="container max-w-[856px] mx-auto">
+    <div class="text-center gap-mb-60">
+      <h2 class="text-57 text-secondary gap-mb-16">Frequently asked questions</h2>
+      <p class="text-18 text-neutral-800">
+        Find answers to your questions, boost your understanding, and make informed decisions about
+        psychotherapy.
+        See <a href="#" class="text-18 text-secondary hover:text-primary transition-1">all inquiries here!</a>
+      </p>
+    </div>
+    <!-- faq accordion start -->
+    <div x-data="{
+        activeAccordion: 'accordion-1',
+        setActiveAccordion(id) {
+          this.activeAccordion = (this.activeAccordion == id) ? null : id;
+        },
+        questions: [
+          {
+            id: 'accordion-1',
+            question: 'How do I access the online course materials?',
+            answer: 'You can access the course materials by logging into your student account on our e-learning platform. Once logged in, you will find all the courses you are enrolled in, and you can access the respective course content, including lectures, assignments, and resources.'
+          },
+          {
+            id: 'accordion-2',
+            question: 'Can I download the course videos for offline viewing?',
+            answer: 'Yes, you have the option to download course videos for offline viewing. Simply navigate to the video lecture you want to download and look for the download icon or button. This feature allows you to access the course content even when you do not have an internet connection.'
+          },
+          {
+            id: 'accordion-3',
+            question: 'How do I submit assignments and quizzes?',
+            answer: 'To submit assignments and quizzes, go to the respective assignment or quiz section within the course. You will find instructors and a designated area to upload your work or complete the quiz online. Make sure to follow the submission guidelines and deadlines provided by your instructors.'
+          },
+          {
+            id: 'accordion-4',
+            question: 'Can I interact with my instructors and classmates?',
+            answer: 'Absolutely! Our e-learning platform offers various tools for interaction and collaboration. You can participate in discussion forums, post questions or comments, and engage with your instructors and classmates. This fosters a supportive learning community and allows you to share ideas and get clarification on course content.'
+          },
+          {
+            id: 'accordion-5',
+            question: 'How do I track my progress and grades?',
+            answer: 'Our e-learning platform provides a dedicated section for tracking your progress and grades. You can view your overall course performance, individual assignment and quiz scores, and any feedback provided by your instructors. This feature helps you stay on top of your learning and identify areas where you may need additional support.'
+          },
+          {
+            id: 'accordion-6',
+            question: 'Is there technical support available?',
+            answer: 'Yes, we have a dedicated technical support team available to assist you with any issues or questions related to our e-learning platform. You can reach out to them via email, live chat, or by submitting a support ticket. They will guide you through troubleshooting and ensure a smooth learning experience.'
+          }
+        ]
+      }" class="relative w-full max-w-[1140px] mx-auto overflow-hidden grid my-gap-24">
+      <template x-for="item in questions" :key="item.id">
+        <div x-data="{ id: $id('accordion') }"
+          :class="{ 'bg-white border-soft-n-900': activeAccordion != id, 'bg-secondary border-secondary': activeAccordion == id }"
+          class="rounded-20 cursor-pointer p-32px border transition-1 wow fadeInUp" data-wow-duration="0.8s">
+          <button @click="setActiveAccordion(id)" :class="{ 'text-white': activeAccordion == id }"
+            class="flex justify-between my-gap-16 w-full text-left text-24 font-bold text-secondary">
+            <span x-text="item.question"></span>
+            <span class="shrink-0 size-8 rounded-lg flex-center border text-base"
+              :class="activeAccordion == id ? 'text-white border-white' : 'text-secondary border-soft-n-900'">
+              <i class="ph transition-1"
+                :class="{ 'ph-plus': activeAccordion != id, 'ph-minus rotate-180': activeAccordion == id }"></i>
+            </span>
+          </button>
+          <div x-show="activeAccordion == id" x-collapse="" class="transition-1 block h-auto">
+            <div class="w-full h-1px gap-my-32 bg-soft-n-20"></div>
+            <p class="text-18 text-white text-opacity-80" x-text="item.answer"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- animate.css for wow.js -->
+    <link rel="stylesheet" href="./assets/css/third-party/animate.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/swiper.min.css" />
+    <!-- Phosphor icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css">
+    <!-- Alpine Style -->
+    <!-- Odomiter CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/odometer.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- style css -->
+    <title>ElevateU - HTML Tailwind CSS</title>
+</head>
+
+<body class="bg-white">
+
+    <!-- preloader start -->
+    <include-preloader />
+    <!-- preloader end -->
+
+    <!-- scroll to top button start -->
+    <include-scrollToTop />
+    <!-- scroll to top button end -->
+
+    <!-- header start -->
+    <include-navbar />
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+
+        <!-- contact header section start -->
+        <section class="gradient-1 bg-no-repeat bg-cover sm:pt-24 pt-18 relative">
+            <div class="container grid grid-cols-12 items-center section-py relative">
+                <div class="xxl:col-span-7 lg:col-span-8 col-span-12">
+                    <span class="box-2 text-primary gap-mb-16 inline-block wow fadeInUp" data-wow-duration="2s">
+                        Courses
+                    </span>
+                    <h4 class="text-57 text-white gap-mb-24 wow fadeInUp" data-wow-duration="2s">
+                        Career transition success
+                    </h4>
+                    <div class="flex-centerY flex-wrap my-gap-24 *:flex-centerY *:gap-2 gap-mb-24 text-white wow fadeInUp"
+                        data-wow-duration="2s">
+                        <div>
+                            <i class="ph ph-monitor-play icon-24"></i>
+                            <span class="text-base font-medium">20 Lessons</span>
+                        </div>
+                        <div>
+                            <i class="ph ph-clock icon-24"></i>
+                            <span class="text-base font-medium">8h 30m</span>
+                        </div>
+                        <div>
+                            <i class="ph-fill ph-star icon-24 text-warning"></i>
+                            <span class="text-base font-medium">4.8 (2.3k)</span>
+                        </div>
+                    </div>
+                    <div class="flex-centerY flex-wrap my-gap-24 text-white wow fadeInUp" data-wow-duration="2s">
+                        <div class="flex-centerY gap-2">
+                            <img src="./assets/images/photos/user1.png" alt="img" />
+                            <h6 class="text-base font-medium">Mamun Gheu</h6>
+                        </div>
+                        <h6 class="text-base font-medium">Categories: Development</h6>
+                    </div>
+                </div>
+            </div>
+            <img class="w-full h-auto" src="./assets/images/icons/sectionVector2.svg" alt="vector" />
+        </section>
+        <!-- contact header section end -->
+
+        <!-- course details section start -->
+        <section class="section-pb pt-18">
+            <div class="container">
+                <div class="grid lg:grid-cols-12 grid-cols-1 items-start my-gap-24">
+                    <div class="xl:col-span-8 lg:col-span-7">
+                        <div x-data="{ activeTab: 0 }" class="relative w-full">
+                            <div
+                                class="relative flex-centerY justify-between gap-2 select-none p-3 w-full scrollbar-0 overflow-x-auto gap-mb-40 rounded-20 border border-primary *:whitespace-nowrap *:w-full ">
+                                <button id="0" @click="activeTab = 0" type="button"
+                                    class="btn text-secondary rounded-xl"
+                                    :class="activeTab === 0 ? 'bg-primary' : 'bg-white'">
+                                    Course Info
+                                </button>
+                                <button id="1" @click="activeTab = 1" type="button"
+                                    class="btn text-secondary rounded-xl"
+                                    :class="activeTab === 1 ? 'bg-primary' : 'bg-white'">
+                                    Course Content
+                                </button>
+                                <button id="2" @click="activeTab = 2" type="button"
+                                    class="btn text-secondary rounded-xl"
+                                    :class="activeTab === 2 ? 'bg-primary' : 'bg-white'">
+                                    Instructors
+                                </button>
+                                <button id="3" @click="activeTab = 3" type="button"
+                                    class="btn text-secondary rounded-xl"
+                                    :class="activeTab === 3 ? 'bg-primary' : 'bg-white'">
+                                    Reviews
+                                </button>
+                            </div>
+                            <div class="relative w-full content">
+                                <div x-show="activeTab === 0">
+                                    <div>
+                                        <h5 class="text-24 font-bold text-secondary gap-mb-16">About Course:</h5>
+                                        <div x-data="{ expanded: false }">
+                                            <p x-show="!expanded">
+                                                Achieving career transition success involves navigating changes with
+                                                confidence and clarity. Our program provides personalized guidance,
+                                                practical strategies, and ongoing support to help you smoothly
+                                                transition to your desired career path. From setting clear goals to
+                                                developing new skills, we're here to empower you every step of the way.
+                                                Let's embark on this journey together towards your professional success.
+                                            </p>
+
+                                            <p x-show="expanded">
+                                                Achieving career transition success involves navigating changes with
+                                                confidence and clarity. Our program provides personalized guidance,
+                                                practical strategies, and ongoing support to help you smoothly
+                                                transition to your desired career path. From setting clear goals to
+                                                developing new skills, we're here to empower you every step of the way.
+                                                Let's embark on this journey together towards your professional
+                                                success.Regular exercise offers numerous benefits for both physical and
+                                                mental
+                                                health. It can improve cardiovascular fitness, strengthen muscles and
+                                                bones, and help maintain a healthy weight. Exercise also boosts mood,
+                                                reduces stress, and enhances cognitive function. Additionally, it can
+                                                lower the risk of chronic diseases such as diabetes, heart disease, and
+                                                certain cancers. By incorporating regular physical activity into your
+                                                routine, you're investing in your long-term health and well-being.
+                                                Whether it's a brisk walk, a yoga session, or a high-intensity workout,
+                                                finding an exercise you enjoy can lead to a happier, healthier life.
+                                            </p>
+
+                                            <button @click="expanded = !expanded"
+                                                class="flex-centerY gap-3 gap-mt-32 gap-mb-24">
+                                                <i class="ph ph-plus"></i>
+                                                <span x-text="expanded ? 'See Less' : 'See More'"
+                                                    class="text-18 font-medium text-neutral-700"></span>
+                                            </button>
+                                        </div>
+                                        <div class="border border-primary rounded-xl px-24px py-32px">
+                                            <h5 class="text-24 font-bold text-secondary gap-mb-32">
+                                                What will you learn?
+                                            </h5>
+                                            <ul
+                                                class="grid sm:grid-cols-2 grid-cols-1 my-gap-24 text-18 text-neutral-700 *:flex-centerY *:gap-3 *:first:icon-28">
+                                                <li>
+                                                    <i class="ph ph-check"></i>
+                                                    Learn New Things
+                                                </li>
+                                                <li>
+                                                    <i class="ph ph-check"></i>
+                                                    Self Development
+                                                </li>
+                                                <li>
+                                                    <i class="ph ph-check"></i>
+                                                    Skills Update
+                                                </li>
+                                                <li>
+                                                    <i class="ph ph-check"></i>
+                                                    Prepared Yourself
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div x-show="activeTab === 1">
+                                    <div class="gap-mt-24">
+                                        <h5 class="text-24 font-bold text-secondary gap-mb-24">Course Content</h5>
+                                        <div x-data="{
+                                            activeAccordion: 'accordion-1',
+                                            setActiveAccordion(id) {
+                                            this.activeAccordion = (this.activeAccordion == id) ? '' : id}}"
+                                            class="grid my-gap-16 text-base font-medium">
+
+                                            <div x-data="{ id: $id('accordion') }"
+                                                class="border rounded-xl transition-1"
+                                                :class=" activeAccordion==id ? 'border-primary' : 'border-soft-n-900'">
+                                                <div @click="setActiveAccordion(id)"
+                                                    class="flex-centerY justify-between text-secondary p-24px w-full cursor-pointer"
+                                                    :class="{ 'border-b border-primary': activeAccordion==id }">
+                                                    <span>Self-Assessment and Goal Setting</span>
+                                                    <span>2 Lectures . 16h:03min</span>
+                                                </div>
+                                                <div x-show="activeAccordion==id" x-collapse="" style="height: auto;"
+                                                    class="transition-1 grid *:px-24px *:py-16px text-neutral-700">
+                                                    <div
+                                                        class="flex-centerY justify-between gap-3 *:flex-centerY *:gap-2">
+                                                        <div>
+                                                            <i class="ph-fill ph-youtube-logo"></i>
+                                                            <p>How set your perfect goal for your career</p>
+                                                        </div>
+                                                        <div>
+                                                            <span>10:54</span>
+                                                            <i class="ph ph-eye"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex-centerY justify-between gap-3 *:flex-centerY *:gap-2">
+                                                        <div>
+                                                            <i class="ph-fill ph-youtube-logo"></i>
+                                                            <p>How set your perfect goal for your career</p>
+                                                        </div>
+                                                        <div>
+                                                            <span>10:54</span>
+                                                            <i class="ph ph-eye"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div x-data="{ id: $id('accordion') }"
+                                                class="border rounded-xl transition-1"
+                                                :class=" activeAccordion==id ? 'border-primary' : 'border-soft-n-900'">
+                                                <div @click="setActiveAccordion(id)"
+                                                    class="flex-centerY justify-between text-secondary p-24px w-full cursor-pointer"
+                                                    :class="{ 'border-b border-primary': activeAccordion==id }">
+                                                    <span>Exploration and Research</span>
+                                                    <span>1 Lectures . 02h:35min</span>
+                                                </div>
+                                                <div x-show="activeAccordion==id" x-collapse="" style="height: auto;"
+                                                    class="transition-1 grid *:px-24px *:py-16px text-neutral-700">
+                                                    <div
+                                                        class="flex-centerY justify-between gap-3 *:flex-centerY *:gap-2">
+                                                        <div>
+                                                            <i class="ph-fill ph-youtube-logo"></i>
+                                                            <p>How set your perfect goal for your career</p>
+                                                        </div>
+                                                        <div>
+                                                            <span>10:54</span>
+                                                            <i class="ph ph-eye"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex-centerY justify-between gap-3 *:flex-centerY *:gap-2">
+                                                        <div>
+                                                            <i class="ph-fill ph-youtube-logo"></i>
+                                                            <p>How set your perfect goal for your career</p>
+                                                        </div>
+                                                        <div>
+                                                            <span>10:54</span>
+                                                            <i class="ph ph-eye"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div x-data="{ id: $id('accordion') }"
+                                                class="border rounded-xl transition-1"
+                                                :class=" activeAccordion==id ? 'border-primary' : 'border-soft-n-900'">
+                                                <div @click="setActiveAccordion(id)"
+                                                    class="flex-centerY justify-between text-secondary p-24px w-full cursor-pointer"
+                                                    :class="{ 'border-b border-primary': activeAccordion==id }">
+                                                    <span>Transition Strategies and Action Plans</span>
+                                                    <span>1 Lectures . 02h:45min</span>
+                                                </div>
+                                                <div x-show="activeAccordion==id" x-collapse="" style="height: auto;"
+                                                    class="transition-1 grid *:px-24px *:py-16px text-neutral-700">
+                                                    <div
+                                                        class="flex-centerY justify-between gap-3 *:flex-centerY *:gap-2">
+                                                        <div>
+                                                            <i class="ph-fill ph-youtube-logo"></i>
+                                                            <p>How set your perfect goal for your career</p>
+                                                        </div>
+                                                        <div>
+                                                            <span>10:54</span>
+                                                            <i class="ph ph-eye"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex-centerY justify-between gap-3 *:flex-centerY *:gap-2">
+                                                        <div>
+                                                            <i class="ph-fill ph-youtube-logo"></i>
+                                                            <p>How set your perfect goal for your career</p>
+                                                        </div>
+                                                        <div>
+                                                            <span>10:54</span>
+                                                            <i class="ph ph-eye"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div x-show="activeTab === 2">
+                                    <div
+                                        class="border border-primary rounded-20 px-32px py-40px flex md:flex-row flex-col md:items-start items-center my-gap-24 text-center md:text-left">
+                                        <img class="shrink-0 size-[140px] rounded-full gap-mb-24"
+                                            src="./assets/images/photos/user6.png" alt="img" />
+                                        <div class="w-full">
+                                            <h5 class="text-20 text-secondary mb-3">Aliyana Gomez</h5>
+                                            <span class="text-base text-neutral-600 gap-mb-24">Digital Marketing
+                                                Instructors</span>
+                                            <div
+                                                class="flex-centerY md:justify-start justify-center flex-wrap my-gap-24 *:flex-centerY *:gap-2 text-base text-neutral-800 gap-mb-24">
+                                                <div>
+                                                    <i class="ph-fill ph-star text-warning icon-24"></i>
+                                                    <span class="font-bold">4.5</span>
+                                                </div>
+                                                <div>
+                                                    <i class="ph ph-student icon-24"></i>
+                                                    <span>27 Students</span>
+                                                </div>
+                                                <div>
+                                                    <i class="ph ph-monitor-play icon-24"></i>
+                                                    <span>8 Courses</span>
+                                                </div>
+                                            </div>
+                                            <p class="text-base text-neutral-800 gap-mb-24">
+                                                As an Career Coach, I am fervently dedicated to shaping the linguistic
+                                                and literary acumen of my students. With a profound passion for language
+                                                education, I employ dynamic and innovative teaching methods to inspire a
+                                                love for literature and effective communication. My commitment extends
+                                                beyond the curriculum, fostering an environment where students develop
+                                                critical thinking skills and a deep appreciation for the nuances of the
+                                                Career Objective.
+                                            </p>
+                                            <div
+                                                class="flex-centerY md:justify-start justify-center gap-2 *:text-secondary text-base *:size-8 *:flex-center *:border *:border-secondary *:rounded-full">
+                                                <a href="#"
+                                                    class="hover:bg-primary hover:text-secondary hover:border-primary transition-1">
+                                                    <i class="ph ph-facebook-logo"></i>
+                                                </a>
+                                                <a href="#"
+                                                    class="hover:bg-primary hover:text-secondary hover:border-primary transition-1">
+                                                    <i class="ph ph-twitter-logo"></i>
+                                                </a>
+                                                <a href="#"
+                                                    class="hover:bg-primary hover:text-secondary hover:border-primary transition-1">
+                                                    <i class="ph ph-instagram-logo"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div x-show="activeTab === 3">
+                                    <div x-data="{ open: null }" @click.away="open = null"
+                                        class="grid *:border-b *:border-b-40 gap-mb-60">
+                                        <div class="py-24px flex flex-col sm:flex-row my-gap-32">
+                                            <img class="size-15 rounded-full" src="./assets/images/photos/user2.png"
+                                                alt="user" />
+                                            <div>
+                                                <div class="flex-centerY gap-2 icon-24 text-warning gap-mb-16">
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star-half"></i>
+                                                </div>
+                                                <div
+                                                    class="flex-centerY gap-2 text-base font-medium text-neutral-800 gap-mb-16">
+                                                    <span>by</span>
+                                                    <span class="font-semibold text-secondary mr-3"><span>Jone
+                                                            Doe</span></span>
+                                                    <span class="flex-centerY gap-2">
+                                                        <span class="size-1 bg-b-700 rounded-full"></span>
+                                                        5 month ago
+                                                    </span>
+                                                </div>
+                                                <p class="text-18 text-neutral-850 gap-mb-24">
+                                                    Faucibus nisl tincidunt eget nullam non nisi est. Duis ut diam quam
+                                                    nulla porttitor massa. Iaculis eu non diam phasellus vestibul.
+                                                </p>
+                                                <button @click="open = open === 1 ? null : 1"
+                                                    class="btn-sm btn-outline-accent text-neutral-850 border-soft-n-900">
+                                                    Reply
+                                                </button>
+                                                <form x-show="open === 1"
+                                                    class="flex flex-wrap items-center my-gap-20 mt-4">
+                                                    <img class="sm:w-15 w-14" src="./assets/images/photos/user3.png"
+                                                        alt="user" />
+                                                    <div class="flex items-center my-gap-20">
+                                                        <input type="text" name="message" placeholder="Write a reply..."
+                                                            class="w-full py-4 px-5 border rounded-[4px] border-b-60 bg-transparent text-b-500 placeholder:text-b-500"
+                                                            required />
+                                                        <button type="submit" class="btn btn-primary">Send</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="sm:pl-[9%] py-24px flex flex-col sm:flex-row my-gap-32">
+                                            <img class="size-15 rounded-full" src="./assets/images/photos/user1.png"
+                                                alt="user" />
+                                            <div>
+                                                <div class="flex-centerY gap-2 icon-24 text-warning gap-mb-16">
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star-half"></i>
+                                                </div>
+                                                <div
+                                                    class="flex-centerY gap-2 text-base font-medium text-neutral-800 gap-mb-16">
+                                                    <span>by</span>
+                                                    <span class="font-semibold text-secondary mr-3"><span>Liana
+                                                            Macaronny</span></span>
+                                                    <span class="flex-centerY gap-2">
+                                                        <span class="size-1 bg-b-700 rounded-full"></span>
+                                                        2 month ago
+                                                    </span>
+                                                </div>
+                                                <p class="text-18 text-neutral-850 gap-mb-24">
+                                                    Faucibus nisl tincidunt eget nullam non nisi est. Duis ut diam quam
+                                                    nulla porttitor massa.
+                                                </p>
+                                                <button @click="open = open === 2 ? null : 2"
+                                                    class="btn-sm btn-outline-accent text-neutral-850 border-soft-n-900">
+                                                    Reply
+                                                </button>
+                                                <form x-show="open === 2"
+                                                    class="flex flex-wrap items-center my-gap-20 mt-4">
+                                                    <img class="sm:w-15 w-14" src="./assets/images/photos/user3.png"
+                                                        alt="user" />
+                                                    <div class="flex items-center my-gap-20">
+                                                        <input type="text" name="message" placeholder="Write a reply..."
+                                                            class="w-full py-4 px-5 border rounded-[4px] border-b-60 bg-transparent text-b-500 placeholder:text-b-500"
+                                                            required />
+                                                        <button type="submit" class="btn btn-primary">Send</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="py-24px flex flex-col sm:flex-row my-gap-32">
+                                            <img class="size-15 rounded-full" src="./assets/images/photos/user4.png"
+                                                alt="user" />
+                                            <div>
+                                                <div class="flex-centerY gap-2 icon-24 text-warning gap-mb-16">
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star"></i>
+                                                    <i class="ph-fill ph-star-half"></i>
+                                                </div>
+                                                <div
+                                                    class="flex-centerY gap-2 text-base font-medium text-neutral-800 gap-mb-16">
+                                                    <span>by</span>
+                                                    <span class="font-semibold text-secondary mr-3"><span>Jone
+                                                            Doe</span></span>
+                                                    <span class="flex-centerY gap-2">
+                                                        <span class="size-1 bg-b-700 rounded-full"></span>
+                                                        5 month ago
+                                                    </span>
+                                                </div>
+                                                <p class="text-18 text-neutral-850 gap-mb-24">
+                                                    Faucibus nisl tincidunt eget nullam non nisi est. Duis ut diam quam
+                                                    nulla porttitor massa. Iaculis eu non diam phasellus vestibul.
+                                                </p>
+                                                <button @click="open = open === 3 ? null : 3"
+                                                    class="btn-sm btn-outline-accent text-neutral-850 border-soft-n-900">
+                                                    Reply
+                                                </button>
+                                                <form x-show="open === 3"
+                                                    class="flex flex-wrap items-center my-gap-20 mt-4">
+                                                    <img class="sm:w-15 w-14" src="./assets/images/photos/user3.png"
+                                                        alt="user" />
+                                                    <div class="flex items-center my-gap-20">
+                                                        <input type="text" name="message" placeholder="Write a reply..."
+                                                            class="w-full py-4 px-5 border rounded-[4px] border-b-60 bg-transparent text-b-500 placeholder:text-b-500"
+                                                            required />
+                                                        <button type="submit" class="btn btn-primary">Send</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-4 lg:col-span-5 relative h-full w-full lg:-mt-[400px]">
+                        <div class="lg:sticky lg:top-30 bg-white border border-primary p-40px rounded-20 p-2">
+                            <div>
+                                <div class="relative w-full rounded-xl overflow-hidden">
+                                    <img class="w-full h-[272px] object-cover" src="./assets/images/photos/course1.png"
+                                        alt="img" />
+                                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                        <button
+                                            class="modal-open-btn btn_effect text-white rounded-full sm:size-12 size-10">
+                                            <i class="ph ph-play icon-24 relative z-10"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- popup modal video start -->
+                                <include-popup-video-modal />
+                                <!-- popup modal video end -->
+                            </div>
+                            <div class="relative p-24px">
+                                <div
+                                    class="absolute md:right-5 right-2 xl:-top-10 md:-top-12 -top-14 size-20 rounded-full flex-center flex-col bg-primary font-semibold text-secondary">
+                                    <h4 class="block relative text-24 font-bold">
+                                        $49
+                                    </h4>
+                                </div>
+                                <div
+                                    class="grid divide-y divide-soft-n-900 *:py-20px *:flex-centerY *:justify-between text-18 font-medium">
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-article icon-32"></i>
+                                            <p>Courses Title</p>
+                                        </div>
+                                        <p>Career Transition</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-monitor-play icon-32"></i>
+                                            <p>Lessons</p>
+                                        </div>
+                                        <p>20Videos</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-globe icon-32"></i>
+                                            <p>Language</p>
+                                        </div>
+                                        <p>English</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-chart-line icon-32"></i>
+                                            <p>Course Level</p>
+                                        </div>
+                                        <p>English</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-star icon-32"></i>
+                                            <p>Reviews</p>
+                                        </div>
+                                        <p>4.8(2.3k)</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-clock icon-32"></i>
+                                            <p>Duration</p>
+                                        </div>
+                                        <p>9 Weeks</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-users icon-32"></i>
+                                            <p>Students</p>
+                                        </div>
+                                        <p>3.7k</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-files icon-32"></i>
+                                            <p>Certifications</p>
+                                        </div>
+                                        <p>Yes</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-check-circle icon-32"></i>
+                                            <p>Pass Percentage</p>
+                                        </div>
+                                        <p>80%</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex-centerY gap-2">
+                                            <i class="ph ph-calendar-x icon-32"></i>
+                                            <p>Deadline</p>
+                                        </div>
+                                        <p>25 Dec, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- course details section end -->
+
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <include-footer />
+    <!-- footer end -->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/alpine.js"></script>
+    <script src="./assets/js/plugin-custom.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- ==== js dependencies start ==== -->
+
+</body>
+
+</html>

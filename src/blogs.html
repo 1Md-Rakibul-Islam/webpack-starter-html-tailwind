@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- animate.css for wow.js -->
+    <link rel="stylesheet" href="./assets/css/third-party/animate.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/swiper.min.css" />
+    <!-- Phosphor icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css">
+    <!-- Alpine Style -->
+    <!-- Odomiter CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/odometer.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- style css -->
+    <title>ElevateU - HTML Tailwind CSS</title>
+</head>
+
+<body class="bg-white">
+
+    <!-- preloader start -->
+    <include-preloader />
+    <!-- preloader end -->
+
+    <!-- scroll to top button start -->
+    <include-scrollToTop />
+    <!-- scroll to top button end -->
+
+    <!-- header start -->
+    <include-navbar />
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+
+        <!-- contact header section start -->
+        <section class="gradient-1 sm:pt-24 pt-18 relative">
+            <div class="container section-py relative z-[2]">
+                <div class="flex-center flex-col text-center my-gap-24">
+                    <span class="box-2 text-primary gap-mb-16 inline-block wow fadeInUp" data-wow-duration="2s">
+                        Blogs
+                    </span>
+                    <h2 class=" text-57 text-white gap-mb-24 wow fadeInUp" data-wow-duration="2s">
+                        Latest Blog & Articles
+                    </h2>
+                    <p class="text-18 text-neutral-25 gap-mb-60 wow fadeInUp" data-wow-duration="2s">
+                        Our Blog and Articles Section Offers Fresh Perspectives on<br class=" md:block hidden" />
+                        Career
+                        and Development Topics.
+                    </p>
+                </div>
+            </div>
+            <img class="w-full max-h-[558px] h-auto wow fadeInUp" data-wow-duration="2s"
+                src="./assets/images/icons/sectionVector2.svg" alt="vector" />
+        </section>
+        <!-- contact header section end -->
+
+        <!-- blogs section start -->
+        <section class="xxl:-mt-[220px] xl:-mt-52 lg:-mt-44 md:-mt-40 sm:-mt-32 -mt-24 section-pb relative z-[2]">
+            <div class="container">
+                <div class="flex-center section-pb">
+                    <div class="relative max-w-[856px] w-full border-2 border-primary rounded-xl overflow-hidden">
+                        <img class="w-full lg:h-[558px] md:h-[452px] sm:h-[332px] h-[280px] object-cover"
+                            src="./assets/images/photos/blog1.1.png" alt="img" />
+                        <div class="absolute flex items-end inset-0 bg-[rgba(5,58,43,0.40)]">
+                            <div class="p-40px">
+                                <h4 class="text-40 text-white gap-mb-16">Networking Strategies for Career Growth</h4>
+                                <div
+                                    class="flex-centerY *:flex-centerY *:gap-3 flex-wrap gap-3 text-base text-neutral-25">
+                                    <span class="bg-white text-sm text-secondary inline py-1 px-2 rounded-full">
+                                        Career
+                                    </span>
+                                    <div>
+                                        <i class="ph ph-calendar-blank icon-20"></i>
+                                        <p>Mar 7, 2024</p>
+                                    </div>
+                                    <div>
+                                        <i class="ph ph-share-network icon-20"></i>
+                                        <p>Share</p>
+                                    </div>
+                                    <div>
+                                        <i class="ph ph-heart icon-20"></i>
+                                        <p>29</p>
+                                    </div>
+                                    <div>
+                                        <i class="ph ph-eye icon-20"></i>
+                                        <p>2265 View</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid xl:grid-cols-2 gap-6">
+                    <div class="group grid sm:grid-cols-2 grid-cols-1 items-center my-gap-24">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full h-auto group-hover:scale-110 transition-1"
+                                src="./assets/images/photos/blog2.png" alt="img" />
+                        </div>
+                        <div>
+                            <div class="flex-centerY gap-5 gap-mb-24">
+                                <span class="badge-1">
+                                    Career
+                                </span>
+                                <div class="flex-centerY gap-2">
+                                    <i class="ph ph-calendar-blank"></i>
+                                    <span class="text-base text-neutral-700">
+                                        Jan 17, 2024
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-24 font-bold text-secondary gap-mb-24">
+                                Building Confidence in Your Career
+                            </h4>
+                            <div class="flex-centerY gap-3 *:flex-centerY *:gap-2 gap-mb-24 text-base text-neutral-700">
+                                <button>
+                                    <i class="ph ph-share-network"></i>
+                                    Share
+                                </button>
+                                <button>
+                                    <i class="ph ph-heart"></i>
+                                    29
+                                </button>
+                                <span>
+                                    <i class="ph ph-eye"></i>
+                                    2265 View
+                                </span>
+                            </div>
+                            <a href="./blog-details.html"
+                                class="flex-centerY gap-2 text-18 text-neutral-900 font-medium">
+                                Read More
+                                <i class="ph ph-arrow-right icon-20"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="group grid sm:grid-cols-2 grid-cols-1 items-center my-gap-24">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full h-auto group-hover:scale-110 transition-1"
+                                src="./assets/images/photos/blog3.png" alt="img" />
+                        </div>
+                        <div>
+                            <div class="flex-centerY gap-5 gap-mb-24">
+                                <span class="badge-1">
+                                    Career
+                                </span>
+                                <div class="flex-centerY gap-2">
+                                    <i class="ph ph-calendar-blank"></i>
+                                    <span class="text-base text-neutral-700">
+                                        Jan 17, 2024
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-24 font-bold text-secondary gap-mb-24">
+                                Effective Goal Setting for Success
+                            </h4>
+                            <div class="flex-centerY gap-3 *:flex-centerY *:gap-2 gap-mb-24 text-base text-neutral-700">
+                                <button>
+                                    <i class="ph ph-share-network"></i>
+                                    Share
+                                </button>
+                                <button>
+                                    <i class="ph ph-heart"></i>
+                                    29
+                                </button>
+                                <span>
+                                    <i class="ph ph-eye"></i>
+                                    2265 View
+                                </span>
+                            </div>
+                            <a href="./blog-details.html"
+                                class="flex-centerY gap-2 text-18 text-neutral-900 font-medium">
+                                Read More
+                                <i class="ph ph-arrow-right icon-20"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="group grid sm:grid-cols-2 grid-cols-1 items-center my-gap-24">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full h-auto group-hover:scale-110 transition-1"
+                                src="./assets/images/photos/blog4.png" alt="img" />
+                        </div>
+                        <div>
+                            <div class="flex-centerY gap-5 gap-mb-24">
+                                <span class="badge-1">
+                                    Career
+                                </span>
+                                <div class="flex-centerY gap-2">
+                                    <i class="ph ph-calendar-blank"></i>
+                                    <span class="text-base text-neutral-700">
+                                        Jan 17, 2024
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-24 font-bold text-secondary gap-mb-24">
+                                Navigating Career Changes Smoothly
+                            </h4>
+                            <div class="flex-centerY gap-3 *:flex-centerY *:gap-2 gap-mb-24 text-base text-neutral-700">
+                                <button>
+                                    <i class="ph ph-share-network"></i>
+                                    Share
+                                </button>
+                                <button>
+                                    <i class="ph ph-heart"></i>
+                                    29
+                                </button>
+                                <span>
+                                    <i class="ph ph-eye"></i>
+                                    2265 View
+                                </span>
+                            </div>
+                            <a href="./blog-details.html"
+                                class="flex-centerY gap-2 text-18 text-neutral-900 font-medium">
+                                Read More
+                                <i class="ph ph-arrow-right icon-20"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="group grid sm:grid-cols-2 grid-cols-1 items-center my-gap-24">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full h-auto group-hover:scale-110 transition-1"
+                                src="./assets/images/photos/blog5.png" alt="img" />
+                        </div>
+                        <div>
+                            <div class="flex-centerY gap-5 gap-mb-24">
+                                <span class="badge-1">
+                                    Career
+                                </span>
+                                <div class="flex-centerY gap-2">
+                                    <i class="ph ph-calendar-blank"></i>
+                                    <span class="text-base text-neutral-700">
+                                        Jan 17, 2024
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-24 font-bold text-secondary gap-mb-24">
+                                Overcoming Common Workplace Challenges
+                            </h4>
+                            <div class="flex-centerY gap-3 *:flex-centerY *:gap-2 gap-mb-24 text-base text-neutral-700">
+                                <button>
+                                    <i class="ph ph-share-network"></i>
+                                    Share
+                                </button>
+                                <button>
+                                    <i class="ph ph-heart"></i>
+                                    29
+                                </button>
+                                <span>
+                                    <i class="ph ph-eye"></i>
+                                    2265 View
+                                </span>
+                            </div>
+                            <a href="./blog-details.html"
+                                class="flex-centerY gap-2 text-18 text-neutral-900 font-medium">
+                                Read More
+                                <i class="ph ph-arrow-right icon-20"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="group grid sm:grid-cols-2 grid-cols-1 items-center my-gap-24">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full h-auto group-hover:scale-110 transition-1"
+                                src="./assets/images/photos/blog6.png" alt="img" />
+                        </div>
+                        <div>
+                            <div class="flex-centerY gap-5 gap-mb-24">
+                                <span class="badge-1">
+                                    Career
+                                </span>
+                                <div class="flex-centerY gap-2">
+                                    <i class="ph ph-calendar-blank"></i>
+                                    <span class="text-base text-neutral-700">
+                                        Jan 17, 2024
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-24 font-bold text-secondary gap-mb-24">
+                                Enhancing Leadership Skills for Professionals
+                            </h4>
+                            <div class="flex-centerY gap-3 *:flex-centerY *:gap-2 gap-mb-24 text-base text-neutral-700">
+                                <button>
+                                    <i class="ph ph-share-network"></i>
+                                    Share
+                                </button>
+                                <button>
+                                    <i class="ph ph-heart"></i>
+                                    29
+                                </button>
+                                <span>
+                                    <i class="ph ph-eye"></i>
+                                    2265 View
+                                </span>
+                            </div>
+                            <a href="./blog-details.html"
+                                class="flex-centerY gap-2 text-18 text-neutral-900 font-medium">
+                                Read More
+                                <i class="ph ph-arrow-right icon-20"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="group grid sm:grid-cols-2 grid-cols-1 items-center my-gap-24">
+                        <div class="overflow-hidden rounded-lg">
+                            <img class="w-full h-auto group-hover:scale-110 transition-1"
+                                src="./assets/images/photos/blog3.png" alt="img" />
+                        </div>
+                        <div>
+                            <div class="flex-centerY gap-5 gap-mb-24">
+                                <span class="badge-1">
+                                    Career
+                                </span>
+                                <div class="flex-centerY gap-2">
+                                    <i class="ph ph-calendar-blank"></i>
+                                    <span class="text-base text-neutral-700">
+                                        Jan 17, 2024
+                                    </span>
+                                </div>
+                            </div>
+                            <h4 class="text-24 font-bold text-secondary gap-mb-24">
+                                Effective Goal Setting for Success
+                            </h4>
+                            <div class="flex-centerY gap-3 *:flex-centerY *:gap-2 gap-mb-24 text-base text-neutral-700">
+                                <button>
+                                    <i class="ph ph-share-network"></i>
+                                    Share
+                                </button>
+                                <button>
+                                    <i class="ph ph-heart"></i>
+                                    29
+                                </button>
+                                <span>
+                                    <i class="ph ph-eye"></i>
+                                    2265 View
+                                </span>
+                            </div>
+                            <a href="./blog-details.html"
+                                class="flex-centerY gap-2 text-18 text-neutral-900 font-medium">
+                                Read More
+                                <i class="ph ph-arrow-right icon-20"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blogs section end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <include-footer />
+    <!-- footer end -->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/alpine.js"></script>
+    <script src="./assets/js/plugin-custom.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- ==== js dependencies start ==== -->
+
+</body>
+
+</html>

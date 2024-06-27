@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- animate.css for wow.js -->
+    <link rel="stylesheet" href="./assets/css/third-party/animate.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/swiper.min.css" />
+    <!-- Phosphor icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css">
+    <!-- Alpine Style -->
+    <!-- Odomiter CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/odometer.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- style css -->
+    <title>SiteName - HTML Tailwind CSS</title>
+</head>
+
+<body class="bg-white">
+
+    <!-- preloader start -->
+    <include-preloader />
+    <!-- preloader end -->
+
+    <!-- scroll to top button start -->
+    <include-scrollToTop />
+    <!-- scroll to top button end -->
+
+    <!-- header start -->
+    <include-navbar />
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+
+        <!-- contact header section start -->
+        <section class="gradient-1 sm:pt-24 pt-18 relative">
+            <div class="container section-py relative z-[2]">
+                <div class="flex-center flex-col text-center my-gap-24">
+                    <span class="box-2 text-primary gap-mb-16 inline-block wow fadeInUp" data-wow-duration="2s">
+                        Log In
+                    </span>
+                    <h2 class="text-57 text-white gap-mb-24 wow fadeInUp" data-wow-duration="2s">
+                        Welcome Back!
+                    </h2>
+                    <p class="text-18 text-neutral-25 gap-mb-60 wow fadeInUp" data-wow-duration="2s">
+                        Choose from 12,000 online video courses with new additions published
+                        <br class="md:block hidden" /> every second month.
+                    </p>
+                </div>
+            </div>
+            <img class="w-full h-auto" src="./assets/images/icons/sectionVector2.svg" alt="vector" />
+        </section>
+        <!-- contact header section end -->
+
+        <!-- contact form section start -->
+        <section class="xxl:-mt-[220px] xl:-mt-52 lg:-mt-44 md:-mt-40 sm:-mt-32 -mt-24 section-pb relative z-[2]">
+            <div class="container text-center flex-center flex-col">
+                <div class="max-w-[840px] w-full bg-gradient-to-tr rounded-20 from-secondary to-[rgba(178,232,157,0.80)] p-2 wow fadeInUp"
+                    data-wow-duration="2s">
+                    <div class="bg-white p-40px rounded-20">
+                        <h4 class="text-32 font-bold text-neutral-900 gap-mb-32">Log In to ElavateU</h4>
+                        <div
+                            class="flex justify-between lg:flex-row flex-col gap-10 py-32px border-t border-soft-n-900">
+                            <form class="w-full grid my-gap-24 *:md:py-[18px] *:md:px-6">
+                                <input type="text" name="name" id="name" placeholder="Enter a your name..."
+                                    class="box-input-1" required />
+                                <input type="email" name="email" id="email" placeholder="Enter a your email..."
+                                    class="box-input-1" required />
+                                <button type="submit" class="btn btn-secondary w-full rounded-lg">Login to Your
+                                    Account</button>
+                                <a href="#" class="block lg:hidden text-18 text-center text-neutral-800 underline">
+                                    Forget Password?
+                                </a>
+                            </form>
+                            <div class="md:block hidden w-1px bg-soft-n-900 xl:mx-12 lg:mx-10 md:mx-5"></div>
+                            <div class="w-full grid my-gap-24 *:md:py-[18px] *:md:px-6">
+                                <button
+                                    class="btn btn-outline-secondary flex-centerY w-full rounded-lg gap-2 text-18 font-bold">
+                                    <i class="ph-fill ph-google-logo"></i>
+                                    Log in with Google
+                                </button>
+                                <button
+                                    class="btn btn-outline-secondary flex-centerY w-full rounded-lg gap-2 text-18 font-bold">
+                                    <i class="ph-fill ph-facebook-logo"></i>
+                                    Log in with Facebook
+                                </button>
+                                <button
+                                    class="btn btn-outline-secondary flex-centerY w-full rounded-lg gap-2 text-18 font-bold">
+                                    <i class="ph-fill ph-apple-logo"></i>
+                                    Log in with Apple
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#" class="lg:block hidden text-18 text-center text-neutral-800 underline">
+                            Forget Password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact form section end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <include-footer />
+    <!-- footer end -->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/alpine.js"></script>
+    <script src="./assets/js/plugin-custom.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- ==== js dependencies start ==== -->
+
+</body>
+
+</html>
