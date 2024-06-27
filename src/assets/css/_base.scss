@@ -1,7 +1,131 @@
-body {
-  @apply text-dark-800 dark:text-dark-100;
+[x-cloak] {
+  display: none;
 }
 
-code {
-  @apply rounded bg-dark-100 p-1 text-xs tracking-wide text-dark-500 dark:bg-dark-600 dark:text-dark-300;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-dm_sans);
+}
+
+label {
+  font-family: var(--font-dm_sans);
+  display: block;
+}
+
+p,
+span,
+li {
+  font-family: var(--font-dm_sans);
+}
+
+span {
+  display: block;
+}
+
+.font-dm_sans {
+  font-family: var(--font-dm_sans) !important;
+}
+
+.font-dm_sans {
+  font-family: var(--font-dm_sans) !important;
+}
+
+.header-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 399;
+  animation-name: fadeDown;
+  animation-duration: 1s;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*================ scroll bar style start ================ */
+
+/* Scrollbar style start */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  padding-left: 8px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: #62a230;
+}
+
+.scrollbar-0::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  padding-left: 4px;
+  background-color: transparent;
+}
+
+.scrollbar-sm::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  padding-left: 4px;
+  background-color: transparent;
+}
+/*================ scroll bar style end ================ */
+
+button {
+  line-height: 0px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Web kit */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+  //   -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*Web kit end */

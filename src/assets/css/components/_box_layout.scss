@@ -1,0 +1,137 @@
+@layer components {
+  /* Custom Flex Utilities Start */
+
+  /* Flex with both horizontal and vertical centering */
+  .flex-c {
+    @apply flex items-center justify-center;
+  }
+
+  /* Flex with horizontal centering */
+  .flex-x {
+    @apply flex justify-center;
+  }
+
+  /* Flex with vertical centering */
+  .flex-y {
+    @apply flex items-center;
+  }
+
+  /* Flex column with both horizontal and vertical centering */
+  .flex-col-c {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  /* Flex with space between items and vertical centering */
+  .flex-between-y {
+    @apply flex items-center justify-between;
+  }
+
+  /* Flex with space around items and vertical centering */
+  .flex-around-y {
+    @apply flex items-center justify-around;
+  }
+
+  /* Flex that wraps items with both horizontal and vertical centering */
+  .flex-wrap-c {
+    @apply flex flex-wrap items-center justify-center;
+  }
+
+  /* Flex with items aligned to the start (top-left) */
+  .flex-start {
+    @apply flex items-start justify-start;
+  }
+
+  /* Flex with items aligned to the end (bottom-right) */
+  .flex-end {
+    @apply flex items-end justify-end;
+  }
+
+  /* Additional Custom Flex Utilities */
+  /* Flex column with top alignment */
+  .flex-col-top {
+    @apply flex flex-col items-start;
+  }
+
+  /* Flex column with bottom alignment */
+  .flex-col-bottom {
+    @apply flex flex-col items-end;
+  }
+
+  /* Flex row with left alignment */
+  .flex-row-left {
+    @apply flex flex-row justify-start;
+  }
+
+  /* Flex row with right alignment */
+  .flex-row-right {
+    @apply flex flex-row justify-end;
+  }
+
+  /* Flex with space-evenly distribution */
+  .flex-evenly {
+    @apply flex justify-evenly;
+  }
+
+  /* Flex column with space between items */
+  .flex-col-between {
+    @apply flex flex-col justify-between;
+  }
+
+  /* Flex that wraps items with space between */
+  .flex-wrap-between {
+    @apply flex flex-wrap justify-between;
+  }
+
+  /* Flex with items aligned to baseline */
+  .flex-baseline {
+    @apply flex items-baseline;
+  }
+  /* Custom Flex Utilities end */
+
+  /* Custom Grid Utilities end */
+  /* Center items in grid both horizontally and vertically */
+  .grid-center {
+    @apply grid place-items-center;
+  }
+
+  /* Auto-fit grid with minimum column width of 200px */
+  .grid-auto-fit {
+    @apply grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4;
+  }
+
+  /* Auto-fill grid with minimum column width of 200px */
+  .grid-auto-fill {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4;
+  }
+
+  /* Grid with a sidebar layout */
+  .grid-sidebar {
+    @apply grid grid-cols-[200px,1fr] gap-4;
+  }
+
+  /* Grid with header, main content, and footer */
+  .grid-layout {
+    @apply grid grid-rows-[auto,1fr,auto] min-h-screen;
+  }
+
+  /* Grid with equal height rows */
+  .grid-equal-rows {
+    @apply grid grid-rows-[1fr,1fr,1fr];
+  }
+
+  /* Grid with dense packing algorithm */
+  .grid-dense {
+    @apply grid grid-flow-dense;
+  }
+
+  /* Grid with items aligned to start */
+  .grid-start {
+    @apply grid justify-items-start;
+  }
+
+  /* Grid with items aligned to end */
+  .grid-end {
+    @apply grid justify-items-end;
+  }
+  /* Custom Grid Utilities end */
+}

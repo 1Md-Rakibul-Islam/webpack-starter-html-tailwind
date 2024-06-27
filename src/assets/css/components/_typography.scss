@@ -1,0 +1,139 @@
+/* Common custom text start */
+
+.text-14 {
+  @apply text-xs font-normal sm:text-sm;
+}
+
+.text-16 {
+  @apply text-sm font-normal sm:text-base;
+}
+
+.text-18 {
+  @apply text-base font-normal sm:text-lg;
+}
+
+.text-20 {
+  @apply text-base font-medium sm:text-xl;
+}
+
+.text-24 {
+  @apply font-semibold text-xl sm:text-2xl;
+}
+
+.text-28 {
+  @apply font-bold text-xl sm:text-2xl lg:text-[28px] lg:leading-[36px];
+}
+
+.text-32 {
+  @apply font-bold text-xl sm:text-2xl md:text-[28px] lg:text-[32px] lg:leading-[42px];
+}
+
+.text-36 {
+  @apply font-bold text-xl sm:text-2xl md:text-3xl lg:text-[36px] lg:leading-[50px];
+}
+
+.text-38 {
+  @apply font-bold text-xl sm:text-2xl md:text-3xl lg:text-[38px] lg:leading-[49px];
+}
+
+.text-40 {
+  @apply font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:leading-[49px] xl:text-[40px];
+}
+
+.text-44 {
+  @apply text-[28px] font-bold sm:text-3xl md:text-4xl lg:text-[44px] lg:leading-[56px];
+}
+
+.text-48 {
+  @apply font-bold text-3xl sm:text-4xl md:text-[40px] md:leading-[140%] lg:text-5xl;
+}
+
+.text-51 {
+  @apply font-bold text-3xl sm:text-4xl md:text-[40px] md:leading-[140%] lg:text-5xl xl:text-[51px] xl:leading-[61px];
+}
+
+.text-53 {
+  @apply font-bold text-3xl sm:text-4xl md:text-[40px] md:leading-[140%] lg:text-5xl xl:text-[53px] xl:leading-[67px];
+}
+
+.text-57 {
+  @apply font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[57px] lg:leading-[68.4px];
+}
+
+.text-60 {
+  @apply font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+}
+
+.text-64 {
+  @apply font-bold text-3xl min-[400px]:text-4xl sm:text-5xl md:text-6xl lg:text-[64px] lg:leading-[80px];
+}
+
+.text-67 {
+  @apply text-3xl font-bold min-[400px]:text-4xl sm:text-5xl md:text-6xl lg:text-[67px] lg:leading-[80px];
+}
+
+.text-72 {
+  @apply font-bold text-3xl min-[400px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
+}
+
+.text-76 {
+  @apply font-bold text-3xl min-[400px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:leading-[80px] xxl:text-[76px] xxl:leading-[99px];
+}
+
+.text-80 {
+  @apply font-bold xl:text-[80px] lg:text-7xl md:text-6xl sm:text-5xl text-4xl;
+}
+
+.text-96 {
+  @apply text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl 3xl:text-8xl;
+}
+
+.text-90 {
+  @apply text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl 3xl:text-[90px] 3xl:leading-[108px];
+}
+
+.text-120 {
+  @apply text-5xl font-bold sm:text-6xl md:text-7xl xxl:text-8xl 3xl:text-[112px] 4xl:text-[120px] 3xl:leading-[108px];
+}
+
+.text-144 {
+  @apply text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl xxl:text-[112px] 3xl:text-[120px] 3xl:leading-[108px] 4xl:text-[144px] 4xl:leading-[170px];
+}
+
+/*Common custom text end */
+
+/*Common icon size start */
+
+.icon-16 {
+  @apply text-base;
+}
+
+.icon-20 {
+  @apply text-lg sm:text-xl;
+}
+
+.icon-24 {
+  @apply text-xl sm:text-2xl;
+}
+
+.icon-28 {
+  @apply text-xl sm:text-2xl md:text-[28px];
+}
+
+.icon-32 {
+  @apply text-xl sm:text-2xl md:text-[32px];
+}
+
+.icon-40 {
+  @apply text-2xl sm:text-3xl md:text-[40px];
+}
+
+.icon-48 {
+  @apply text-3xl sm:text-4xl md:text-5xl;
+}
+
+.icon-60 {
+  @apply text-4xl md:text-5xl lg:text-[60px];
+}
+
+/*Common icon size end */

@@ -1,0 +1,351 @@
+@layer components {
+  // Container Start
+  .container {
+    @apply mx-auto px-3 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1320px];
+  }
+
+  .container-full {
+    @apply mx-auto px-3 sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1320px] 3xl:max-w-[1800px];
+  }
+  // Container End
+
+  // Button Start
+  .btn {
+    @apply inline-flex items-center justify-center text-18 cursor-pointer text-center font-semibold capitalize disabled:cursor-not-allowed disabled:opacity-60 transition-1;
+  }
+
+  // Button Sizes
+  .btn-xs {
+    @apply px-2 py-1 text-xs;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm;
+  }
+
+  .btn-md {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .btn-lg {
+    @apply px-5 py-2.5 text-base;
+  }
+
+  .btn-xl {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn-primary-solid {
+    @apply bg-primary-500 text-white focus:bg-primary-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+  }
+
+  .btn-secondary-solid {
+    @apply bg-secondary-500 text-white focus:bg-secondary-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+  }
+
+  .btn-success-solid {
+    @apply bg-success-500 text-white focus:bg-success-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+  }
+
+  .btn-info-solid {
+    @apply bg-info-500 text-white focus:bg-info-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+  }
+
+  .btn-warning-solid {
+    @apply bg-warning-500 text-white focus:bg-warning-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+  }
+
+  .btn-danger-solid {
+    @apply bg-danger-500 text-white focus:bg-danger-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+  }
+
+  .btn-dark-solid {
+    @apply bg-dark-500 text-white focus:bg-dark-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+  }
+
+  .btn-primary-outline {
+    @apply border border-primary-500 text-primary-500 focus:border-primary-600 focus:bg-primary-100 focus:text-primary-600 enabled:hover:bg-primary-100 dark:enabled:hover:bg-primary-500 dark:enabled:hover:text-dark-200;
+  }
+
+  .btn-secondary-outline {
+    @apply border border-secondary-500 text-secondary-500 focus:border-secondary-600 focus:bg-secondary-100 focus:text-secondary-600 enabled:hover:bg-secondary-100 dark:enabled:hover:bg-secondary-500 dark:enabled:hover:text-dark-200;
+  }
+
+  .btn-success-outline {
+    @apply border border-success-500 text-success-500 focus:border-success-600 focus:bg-success-100 focus:text-success-600 enabled:hover:bg-success-100 dark:enabled:hover:bg-success-500 dark:enabled:hover:text-dark-200;
+  }
+
+  .btn-info-outline {
+    @apply border border-info-500 text-info-500 focus:border-info-600 focus:bg-info-100 focus:text-info-600 enabled:hover:bg-info-100 dark:enabled:hover:bg-info-500 dark:enabled:hover:text-dark-200;
+  }
+
+  .btn-warning-outline {
+    @apply border border-warning-500 text-warning-500 focus:border-warning-600 focus:bg-warning-100 focus:text-warning-600 enabled:hover:bg-warning-100 dark:enabled:hover:bg-warning-500 dark:enabled:hover:text-dark-200;
+  }
+
+  .btn-danger-outline {
+    @apply border border-danger-500 text-danger-500 focus:border-danger-600 focus:bg-danger-100 focus:text-danger-600 enabled:hover:bg-danger-100 dark:enabled:hover:bg-danger-500 dark:enabled:hover:text-dark-200;
+  }
+
+  .btn-dark-outline {
+    @apply border border-dark-500 text-dark-500 focus:border-dark-600 focus:bg-dark-100 focus:text-dark-600 enabled:hover:bg-dark-100 dark:enabled:hover:bg-dark-500 dark:enabled:hover:text-dark-200;
+  }
+
+  .btn-primary-soft {
+    @apply bg-primary-100 text-primary-500 focus:bg-primary-600 focus:text-primary-50 enabled:hover:bg-primary-500 enabled:hover:text-primary-50 dark:bg-primary-900 dark:bg-opacity-50 dark:text-primary-200;
+  }
+
+  .btn-secondary-soft {
+    @apply bg-secondary-100 text-secondary-500 focus:bg-secondary-600 focus:text-secondary-50 enabled:hover:bg-secondary-500 enabled:hover:text-secondary-50 dark:bg-secondary-700 dark:bg-opacity-50 dark:text-secondary-200;
+  }
+
+  .btn-success-soft {
+    @apply bg-success-100 text-success-500 focus:bg-success-600 focus:text-success-50 enabled:hover:bg-success-500 enabled:hover:text-success-50 dark:bg-success-800 dark:bg-opacity-50 dark:text-success-200;
+  }
+
+  .btn-info-soft {
+    @apply bg-info-100 text-info-500 focus:bg-info-600 focus:text-info-50 enabled:hover:bg-info-500 enabled:hover:text-info-50 dark:bg-info-800 dark:bg-opacity-50 dark:text-info-200;
+  }
+
+  .btn-warning-soft {
+    @apply bg-warning-100 text-warning-500 focus:bg-warning-600 focus:text-warning-50 enabled:hover:bg-warning-500 enabled:hover:text-warning-50 dark:bg-warning-800 dark:bg-opacity-50 dark:text-warning-200;
+  }
+
+  .btn-danger-soft {
+    @apply bg-danger-100 text-danger-500 focus:bg-danger-600 focus:text-danger-50 enabled:hover:bg-danger-500 enabled:hover:text-danger-50 dark:bg-danger-900 dark:bg-opacity-50 dark:text-danger-300;
+  }
+
+  .btn-dark-soft {
+    @apply bg-dark-200 text-dark-500 focus:bg-dark-900 focus:text-dark-50 enabled:hover:bg-dark-800 enabled:hover:text-dark-50 dark:bg-dark-700 dark:bg-opacity-50 dark:text-dark-200 dark:enabled:hover:bg-dark-900;
+  }
+
+  .btn-primary-plain {
+    @apply text-primary-500 focus:bg-primary-100 focus:text-primary-600 enabled:hover:bg-primary-100;
+  }
+
+  .btn-secondary-plain {
+    @apply text-secondary-500 focus:bg-secondary-100 focus:text-secondary-600 enabled:hover:bg-secondary-100;
+  }
+
+  .btn-success-plain {
+    @apply text-success-500 focus:bg-success-100 focus:text-success-600 enabled:hover:bg-success-100;
+  }
+
+  .btn-info-plain {
+    @apply text-info-500 focus:bg-info-100 focus:text-info-600 enabled:hover:bg-info-100;
+  }
+
+  .btn-warning-plain {
+    @apply text-warning-500 focus:bg-warning-100 focus:text-warning-600 enabled:hover:bg-warning-100;
+  }
+
+  .btn-danger-plain {
+    @apply text-danger-500 focus:bg-danger-100 focus:text-danger-600 enabled:hover:bg-danger-100;
+  }
+
+  .btn-dark-plain {
+    @apply text-dark-500 focus:bg-dark-100 focus:text-dark-600 enabled:hover:bg-dark-200;
+  }
+  /* Button End*/
+
+  /* Badge Start*/
+  .badge {
+    @apply inline-flex items-center justify-center rounded-primary px-2 py-0.5 text-xs;
+
+    &-circle {
+      @apply h-5 w-5 rounded-full p-0;
+    }
+
+    &-dot {
+      @apply h-2 w-2 rounded-full p-0;
+    }
+
+    &-primary {
+      @apply bg-primary-500 text-primary-100;
+    }
+
+    &-secondary {
+      @apply bg-secondary-500 text-secondary-100;
+    }
+
+    &-success {
+      @apply bg-success-500 text-success-100;
+    }
+
+    &-danger {
+      @apply bg-danger-500 text-danger-100;
+    }
+
+    &-warning {
+      @apply bg-warning-500 text-warning-100;
+    }
+
+    &-info {
+      @apply bg-info-500 text-info-100;
+    }
+
+    &-dark {
+      @apply bg-dark-500 text-dark-100;
+    }
+
+    &-outline-primary {
+      @apply border border-primary-500 text-primary-500;
+    }
+
+    &-outline-secondary {
+      @apply border border-secondary-500 text-secondary-500;
+    }
+
+    &-outline-success {
+      @apply border border-success-500 text-success-500;
+    }
+
+    &-outline-danger {
+      @apply border border-danger-500 text-danger-500;
+    }
+
+    &-outline-warning {
+      @apply border border-warning-500 text-warning-500;
+    }
+
+    &-outline-info {
+      @apply border border-info-500 text-info-500;
+    }
+
+    &-outline-dark {
+      @apply border border-dark-500 text-dark-500;
+    }
+
+    &-soft-primary {
+      @apply bg-primary-100 text-primary-500;
+    }
+
+    &-soft-secondary {
+      @apply bg-secondary-100 text-secondary-500;
+    }
+
+    &-soft-success {
+      @apply bg-success-100 text-success-500;
+    }
+
+    &-soft-danger {
+      @apply bg-danger-100 text-danger-500;
+    }
+
+    &-soft-warning {
+      @apply bg-warning-100 text-warning-500;
+    }
+
+    &-soft-info {
+      @apply bg-info-100 text-info-500;
+    }
+
+    &-soft-dark {
+      @apply bg-dark-200 text-dark-500;
+    }
+
+    &-rounded {
+      @apply rounded-full px-3;
+    }
+  }
+  /* Badge Start*/
+
+  /* Tabs Start*/
+  .tab-list {
+    @apply flex flex-wrap items-center gap-x-6 gap-y-2 border-b-2 border-dark-200 text-sm tracking-wide dark:border-dark-700;
+  }
+
+  .tab {
+    margin-bottom: -2px;
+    @apply cursor-pointer whitespace-nowrap py-3 text-dark-800 outline-none dark:text-dark-100;
+  }
+
+  .tab.active {
+    @apply border-b-2 border-primary-500 text-primary-500;
+  }
+  /* Tabs end*/
+
+  //   pagination start
+  .pagination {
+    @apply mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-between;
+
+    &-summary {
+      @apply text-sm text-dark-500;
+    }
+
+    &-link {
+      @apply ms-2 flex h-7 w-7 items-center justify-center rounded text-sm text-dark-800 transition-colors duration-150 hover:bg-primary-50 hover:text-primary-500 dark:bg-opacity-20 dark:text-dark-100 dark:hover:text-primary-500;
+    }
+
+    &-link.active {
+      @apply cursor-not-allowed bg-primary-50 text-primary-500 dark:bg-opacity-20;
+    }
+
+    &-prev {
+      @apply flex h-7 w-7 items-center justify-center rounded text-dark-800 transition-colors duration-150 hover:bg-primary-50 hover:text-primary-500 dark:bg-opacity-20 dark:text-dark-100;
+    }
+
+    &-prev.disabled {
+      @apply cursor-not-allowed text-dark-400 hover:bg-transparent hover:text-dark-400;
+    }
+
+    &-next {
+      @apply ms-2 flex h-7 w-7 items-center justify-center rounded text-dark-800 transition-colors duration-150 hover:bg-primary-50 hover:text-primary-500 dark:bg-opacity-20 dark:text-dark-100;
+    }
+
+    &-next.disabled {
+      @apply cursor-not-allowed text-gray-400 hover:bg-transparent hover:text-dark-400;
+    }
+  }
+  // Pagination end
+
+  // common ui class start
+  .linebar-gradient {
+    @apply w-14 h-1 bg-gradient-to-tr from-secondary to-[rgba(167,65,27,0.20)] gap-mb-16;
+  }
+
+  .line-input-1 {
+    @apply w-full text-base text-neutral-700 placeholder:text-neutral-600 font-medium border-b border-neutral-600 bg-transparent outline-none;
+  }
+
+  .line-input-2 {
+    @apply w-full text-16 text-neutral-700 placeholder:text-neutral-700 text-opacity-80 font-medium border-b border-neutral-400 pb-4 bg-transparent;
+  }
+
+  .box-input-1 {
+    @apply w-full rounded-md bg-transparent border border-soft-n-900 p-3 placeholder:text-neutral-600 text-neutral-900 text-18 outline-none;
+  }
+
+  .box-input-2 {
+    @apply w-full border border-neutral-600 px-24px py-3 md:py-4 lg:py-5 placeholder:text-neutral-700 text-neutral-700 text-18 bg-transparent outline-none;
+  }
+
+  .box-input-3 {
+    @apply w-full border border-[#EBECEF] px-24px py-3 md:py-4 lg:py-5 placeholder:text-neutral-300 text-neutral-600 text-18 bg-white outline-none;
+  }
+
+  .overly-1 {
+    @apply absolute inset-0 bg-gradient-to-tr from-[rgba(39,54,21,0.30)_0%] to-[rgba(93,129,50,0.30)_100%] transition-2;
+  }
+
+  .overly-2 {
+    @apply absolute inset-0 bg-[rgba(39,54,21,0.62)] transition-1;
+  }
+
+  .overly-3 {
+    @apply absolute inset-0 bg-gradient-to-b from-[rgba(113,156,61,0.00)] to-[rgba(39,54,21,0.60)] bg-opacity-20 transition-2;
+  }
+
+  .overly-4 {
+    @apply absolute inset-0 bg-gradient-to-b from-[rgba(86,170,70,0.00)_14.07%] to-[rgba(86,170,70,0.32)_38.98%] transition-2;
+  }
+
+  .line-1 {
+    @apply block w-6 h-1px bg-primary;
+  }
+
+  .line-2 {
+    @apply block w-6 h-1px bg-secondary;
+  }
+  // common ui class end
+}
