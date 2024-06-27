@@ -1,0 +1,26 @@
+:root {
+  --font-dm_sans: "DM Sans", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Third party libraries
+@import "./third-party/swiper.min";
+@import "./third-party/odometer.css";
+@import "./third-party/animate.min.css";
+
+// Custom styles
+@import "base";
+@import "reset";
+
+// Components
+@import "components/badge";
+@import "components/button";
+@import "components/tab";
+@import "components/pagination";
+
+@import "./tailwind";
+@import "./main";
+@import "./utility";

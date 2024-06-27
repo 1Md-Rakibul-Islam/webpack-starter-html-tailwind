@@ -3,4 +3,4 @@
  * Ex: import "./assets/css/style.scss";
  * ------------------------------------------------------------------------ */
 
-import "./../css/style.scss";
+import "./../css/app.scss";

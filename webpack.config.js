@@ -8,42 +8,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlWebpackSimpleIncludePlugin = require("html-webpack-simple-include-plugin");
 
 // List of HTML Pages files
-const htmlFiles = [
-  "index",
-  "about",
-  "courses",
-  "course-details",
-  "instructors",
-  "checkout",
-  "faq",
-  "contact-us",
-  "blogs",
-  "blog-details",
-  "case-study",
-  "sign-up",
-  "sign-in",
-];
+const htmlFiles = ["index"];
 
 // List of partial files to include
 const partialFiles = [
   "navbar",
   "preloader",
-  "footer",
   "popup-video-modal",
   "scrollToTop",
-  "why-choose-us",
-  "our-services",
-  "contact",
-  "date-input",
-  "all-categories",
-  "interview-category",
-  "transition-category",
-  "leadership-category",
-  "networking-category",
-  "resume-category",
   "all-faqs",
-  "process-step",
-  "our-instructors",
 ];
 
 // Create HtmlWebpackPlugin instances for each HTML file

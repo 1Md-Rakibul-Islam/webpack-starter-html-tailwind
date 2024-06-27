@@ -1,0 +1,31 @@
+.pagination {
+  @apply mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-between;
+
+  &-summary {
+    @apply text-sm text-dark-500;
+  }
+
+  &-link {
+    @apply ms-2 flex h-7 w-7 items-center justify-center rounded text-sm text-dark-800 transition-colors duration-150 hover:bg-primary-50 hover:text-primary-500 dark:bg-opacity-20 dark:text-dark-100 dark:hover:text-primary-500;
+  }
+
+  &-link.active {
+    @apply cursor-not-allowed bg-primary-50 text-primary-500 dark:bg-opacity-20;
+  }
+
+  &-prev {
+    @apply flex h-7 w-7 items-center justify-center rounded text-dark-800 transition-colors duration-150 hover:bg-primary-50 hover:text-primary-500 dark:bg-opacity-20 dark:text-dark-100;
+  }
+
+  &-prev.disabled {
+    @apply cursor-not-allowed text-dark-400 hover:bg-transparent hover:text-dark-400;
+  }
+
+  &-next {
+    @apply ms-2 flex h-7 w-7 items-center justify-center rounded text-dark-800 transition-colors duration-150 hover:bg-primary-50 hover:text-primary-500 dark:bg-opacity-20 dark:text-dark-100;
+  }
+
+  &-next.disabled {
+    @apply cursor-not-allowed text-gray-400 hover:bg-transparent hover:text-dark-400;
+  }
+}

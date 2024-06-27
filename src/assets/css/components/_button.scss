@@ -1,0 +1,136 @@
+.btn {
+  @apply inline-flex items-center justify-center rounded transition-all duration-150 disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+// Button Sizes
+.btn-xs {
+  @apply px-2 py-1 text-xs;
+}
+
+.btn-sm {
+  @apply px-3 py-1.5 text-sm;
+}
+
+.btn-md {
+  @apply px-4 py-2 text-sm;
+}
+
+.btn-lg {
+  @apply px-5 py-2.5 text-base;
+}
+
+.btn-xl {
+  @apply px-6 py-3 text-base;
+}
+
+.btn-primary-solid {
+  @apply bg-primary-500 text-white focus:bg-primary-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+}
+
+.btn-secondary-solid {
+  @apply bg-secondary-500 text-white focus:bg-secondary-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+}
+
+.btn-success-solid {
+  @apply bg-success-500 text-white focus:bg-success-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+}
+
+.btn-info-solid {
+  @apply bg-info-500 text-white focus:bg-info-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+}
+
+.btn-warning-solid {
+  @apply bg-warning-500 text-white focus:bg-warning-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+}
+
+.btn-danger-solid {
+  @apply bg-danger-500 text-white focus:bg-danger-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+}
+
+.btn-dark-solid {
+  @apply bg-dark-500 text-white focus:bg-dark-600 enabled:hover:bg-opacity-90 dark:text-dark-200;
+}
+
+.btn-primary-outline {
+  @apply border border-primary-500 text-primary-500 focus:border-primary-600 focus:bg-primary-100 focus:text-primary-600 enabled:hover:bg-primary-100 dark:enabled:hover:bg-primary-500 dark:enabled:hover:text-dark-200;
+}
+
+.btn-secondary-outline {
+  @apply border border-secondary-500 text-secondary-500 focus:border-secondary-600 focus:bg-secondary-100 focus:text-secondary-600 enabled:hover:bg-secondary-100 dark:enabled:hover:bg-secondary-500 dark:enabled:hover:text-dark-200;
+}
+
+.btn-success-outline {
+  @apply border border-success-500 text-success-500 focus:border-success-600 focus:bg-success-100 focus:text-success-600 enabled:hover:bg-success-100 dark:enabled:hover:bg-success-500 dark:enabled:hover:text-dark-200;
+}
+
+.btn-info-outline {
+  @apply border border-info-500 text-info-500 focus:border-info-600 focus:bg-info-100 focus:text-info-600 enabled:hover:bg-info-100 dark:enabled:hover:bg-info-500 dark:enabled:hover:text-dark-200;
+}
+
+.btn-warning-outline {
+  @apply border border-warning-500 text-warning-500 focus:border-warning-600 focus:bg-warning-100 focus:text-warning-600 enabled:hover:bg-warning-100 dark:enabled:hover:bg-warning-500 dark:enabled:hover:text-dark-200;
+}
+
+.btn-danger-outline {
+  @apply border border-danger-500 text-danger-500 focus:border-danger-600 focus:bg-danger-100 focus:text-danger-600 enabled:hover:bg-danger-100 dark:enabled:hover:bg-danger-500 dark:enabled:hover:text-dark-200;
+}
+
+.btn-dark-outline {
+  @apply border border-dark-500 text-dark-500 focus:border-dark-600 focus:bg-dark-100 focus:text-dark-600 enabled:hover:bg-dark-100 dark:enabled:hover:bg-dark-500 dark:enabled:hover:text-dark-200;
+}
+
+.btn-primary-soft {
+  @apply bg-primary-100 text-primary-500 focus:bg-primary-600 focus:text-primary-50 enabled:hover:bg-primary-500 enabled:hover:text-primary-50 dark:bg-primary-900 dark:bg-opacity-50 dark:text-primary-200;
+}
+
+.btn-secondary-soft {
+  @apply bg-secondary-100 text-secondary-500 focus:bg-secondary-600 focus:text-secondary-50 enabled:hover:bg-secondary-500 enabled:hover:text-secondary-50 dark:bg-secondary-700 dark:bg-opacity-50 dark:text-secondary-200;
+}
+
+.btn-success-soft {
+  @apply bg-success-100 text-success-500 focus:bg-success-600 focus:text-success-50 enabled:hover:bg-success-500 enabled:hover:text-success-50 dark:bg-success-800 dark:bg-opacity-50 dark:text-success-200;
+}
+
+.btn-info-soft {
+  @apply bg-info-100 text-info-500 focus:bg-info-600 focus:text-info-50 enabled:hover:bg-info-500 enabled:hover:text-info-50 dark:bg-info-800 dark:bg-opacity-50 dark:text-info-200;
+}
+
+.btn-warning-soft {
+  @apply bg-warning-100 text-warning-500 focus:bg-warning-600 focus:text-warning-50 enabled:hover:bg-warning-500 enabled:hover:text-warning-50 dark:bg-warning-800 dark:bg-opacity-50 dark:text-warning-200;
+}
+
+.btn-danger-soft {
+  @apply bg-danger-100 text-danger-500 focus:bg-danger-600 focus:text-danger-50 enabled:hover:bg-danger-500 enabled:hover:text-danger-50 dark:bg-danger-900 dark:bg-opacity-50 dark:text-danger-300;
+}
+
+.btn-dark-soft {
+  @apply bg-dark-200 text-dark-500 focus:bg-dark-900 focus:text-dark-50 enabled:hover:bg-dark-800 enabled:hover:text-dark-50 dark:bg-dark-700 dark:bg-opacity-50 dark:text-dark-200 dark:enabled:hover:bg-dark-900;
+}
+
+.btn-primary-plain {
+  @apply text-primary-500 focus:bg-primary-100 focus:text-primary-600 enabled:hover:bg-primary-100;
+}
+
+.btn-secondary-plain {
+  @apply text-secondary-500 focus:bg-secondary-100 focus:text-secondary-600 enabled:hover:bg-secondary-100;
+}
+
+.btn-success-plain {
+  @apply text-success-500 focus:bg-success-100 focus:text-success-600 enabled:hover:bg-success-100;
+}
+
+.btn-info-plain {
+  @apply text-info-500 focus:bg-info-100 focus:text-info-600 enabled:hover:bg-info-100;
+}
+
+.btn-warning-plain {
+  @apply text-warning-500 focus:bg-warning-100 focus:text-warning-600 enabled:hover:bg-warning-100;
+}
+
+.btn-danger-plain {
+  @apply text-danger-500 focus:bg-danger-100 focus:text-danger-600 enabled:hover:bg-danger-100;
+}
+
+.btn-dark-plain {
+  @apply text-dark-500 focus:bg-dark-100 focus:text-dark-600 enabled:hover:bg-dark-200;
+}

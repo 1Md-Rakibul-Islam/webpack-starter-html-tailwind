@@ -1,7 +1,3 @@
-:root {
-  --font-dm_sans: "DM Sans", sans-serif;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,22 +32,6 @@
     @apply py-1 px-2 rounded-full bg-soft-secondary-3 text-sm font-medium text-neutral-800 inline;
   }
   // badge end
-
-  .box-40 {
-    @apply sm:size-10 size-8;
-  }
-
-  .box-60 {
-    @apply lg:size-15 md:size-12 size-10;
-  }
-
-  .box-80 {
-    @apply lg:size-20 md:size-18 sm:size-15 size-12;
-  }
-
-  .box-100 {
-    @apply lg:size-25 md:size-20 sm:size-18 size-15;
-  }
 
   .btn-primary {
     @apply bg-primary text-secondary hover:bg-secondary hover:text-white;
@@ -98,6 +78,10 @@
   }
 
   /* icon size */
+  .icon-16 {
+    @apply text-bases;
+  }
+
   .icon-20 {
     @apply text-lg sm:text-xl;
   }
@@ -273,134 +257,158 @@
   }
   /* section end */
 
-  /* my gap mb */
-
-  .gap-mb-64 {
-    @apply mb-9 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-16;
+  // common margin start
+  /* 16px padding utilities */
+  .m-16px {
+    @apply m-3 sm:m-3.5 md:m-4;
+  }
+  .mx-16px {
+    @apply mx-3 sm:mx-3.5 md:mx-4;
+  }
+  .my-16px {
+    @apply my-3 sm:my-3.5 md:my-4;
+  }
+  .mb-16px {
+    @apply mb-3 sm:mb-3.5 md:mb-4;
+  }
+  .mt-16px {
+    @apply mt-3 sm:mt-3.5 md:mt-4;
   }
 
-  .gap-mb-60 {
-    @apply mb-9 sm:mb-10 md:mb-12 lg:mb-14 xl:mb-[60px];
+  /* 20px margin utilities */
+  .m-20px {
+    @apply m-3 sm:m-3.5 md:m-4 lg:m-5;
+  }
+  .mx-20px {
+    @apply mx-3 sm:mx-3.5 md:mx-4 lg:mx-5;
+  }
+  .my-20px {
+    @apply my-3 sm:my-3.5 md:my-4 lg:my-5;
+  }
+  .mb-20px {
+    @apply mb-3 sm:mb-3.5 md:mb-4 lg:mb-5;
+  }
+  .mt-20px {
+    @apply mt-3 sm:mt-3.5 md:mt-4 lg:mt-5;
   }
 
-  .gap-mb-48 {
-    @apply mb-7 sm:mb-8 md:mb-9 lg:mb-10 xl:mb-12;
+  /* 24px margin utilities */
+  .m-24px {
+    @apply m-3 md:m-4 lg:m-5 xl:m-6;
+  }
+  .mx-24px {
+    @apply mx-3 md:mx-4 lg:mx-5 xl:mx-6;
+  }
+  .my-24px {
+    @apply my-3 md:my-4 lg:my-5 xl:my-6;
+  }
+  .mb-24px {
+    @apply mb-3 md:mb-4 lg:mb-5 xl:mb-6;
+  }
+  .mt-24px {
+    @apply mt-3 md:mt-4 lg:mt-5 xl:mt-6;
   }
 
-  .gap-mb-40 {
-    @apply mb-6 sm:mb-7 md:mb-8 lg:mb-9 xl:mb-10;
+  /* 28px margin utilities */
+  .m-28px {
+    @apply m-3 sm:m-4 md:m-5 lg:m-6 xl:m-7;
+  }
+  .mx-28px {
+    @apply mx-3 sm:mx-4 md:mx-5 lg:mx-6 xl:mx-7;
+  }
+  .my-28px {
+    @apply my-3 sm:my-4 md:my-5 lg:my-6 xl:my-7;
+  }
+  .mb-28px {
+    @apply mb-3 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-7;
+  }
+  .mt-28px {
+    @apply mt-3 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-7;
   }
 
-  .gap-mb-32 {
-    @apply mb-4 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8;
+  /* 32px margin utilities */
+  .m-32px {
+    @apply m-3.5 sm:m-5 md:m-6 lg:m-7 xl:m-8;
+  }
+  .mx-32px {
+    @apply mx-3.5 sm:mx-5 md:mx-6 lg:mx-7 xl:mx-8;
+  }
+  .my-32px {
+    @apply my-3.5 sm:my-5 md:my-6 lg:my-7 xl:my-8;
+  }
+  .mb-32px {
+    @apply mb-3.5 sm:mb-5 md:mb-6 lg:mb-7 xl:mb-8;
+  }
+  .mt-32px {
+    @apply mt-3.5 sm:mt-5 md:mt-6 lg:mt-7 xl:mt-8;
   }
 
-  .gap-mb-28 {
-    @apply mb-3.5 sm:mb-4 md:mb-5 lg:mb-6 xl:mb-7;
+  /* 40px margin utilities */
+  .m-40px {
+    @apply m-5 sm:m-6 md:m-8 lg:m-9 xl:m-10;
+  }
+  .mx-40px {
+    @apply mx-5 sm:mx-6 md:mx-8 lg:mx-9 xl:mx-10;
+  }
+  .my-40px {
+    @apply my-5 sm:my-6 md:my-8 lg:my-9 xl:my-10;
+  }
+  .mb-40px {
+    @apply mb-5 sm:mb-6 md:mb-8 lg:mb-9 xl:mb-10;
+  }
+  .mt-40px {
+    @apply mt-5 sm:mt-6 md:mt-8 lg:mt-9 xl:mt-10;
   }
 
-  .gap-mb-24 {
-    @apply mb-3.5 sm:mb-4 md:mb-5 lg:mb-6;
+  /* 60px margin utilities */
+  .m-60px {
+    @apply m-8 md:m-10 lg:m-12 xl:m-14 3xl:m-[60px];
+  }
+  .mx-60px {
+    @apply mx-8 md:mx-10 lg:mx-12 xl:mx-14 3xl:mx-[60px];
+  }
+  .my-60px {
+    @apply my-8 md:my-10 lg:my-12 xl:my-14 3xl:my-[60px];
+  }
+  .mb-60px {
+    @apply mb-8 md:mb-10 lg:mb-12 xl:mb-14 3xl:mb-[60px];
+  }
+  .mt-60px {
+    @apply mt-8 md:mt-10 lg:mt-12 xl:mt-14 3xl:mt-[60px];
   }
 
-  .gap-mb-20 {
-    @apply mb-3 md:mb-4 lg:mb-5;
+  /* 80px margin utilities */
+  .m-80px {
+    @apply m-8 sm:m-9 md:m-10 lg:m-15 xl:m-18 xxl:m-20;
   }
-
-  .gap-mb-16 {
-    @apply mb-2.5 md:mb-3 lg:mb-4;
+  .mx-80px {
+    @apply mx-8 sm:mx-9 md:mx-10 lg:mx-15 xl:mx-18 xxl:mx-20;
   }
-
-  /* my gap mt start */
-
-  .gap-mt-64 {
-    @apply mt-9 sm:mt-10 md:mt-12 lg:mt-14 xl:mt-16;
+  .my-80px {
+    @apply my-8 sm:my-9 md:my-10 lg:my-15 xl:my-18 xxl:my-20;
   }
-
-  .gap-mt-60 {
-    @apply mt-9 sm:mt-10 md:mt-12 lg:mt-14 xl:mt-[60px];
+  .mb-80px {
+    @apply mb-8 sm:mb-9 md:mb-10 lg:mb-15 xl:mb-18 xxl:mb-20;
   }
-
-  .gap-mt-48 {
-    @apply mt-7 sm:mt-8 md:mt-9 lg:mt-10 xl:mt-12;
+  .mt-80px {
+    @apply mt-8 sm:mt-9 md:mt-10 lg:mt-15 xl:mt-18 xxl:mt-20;
   }
-
-  .gap-mt-40 {
-    @apply mt-6 sm:mt-7 md:mt-8 lg:mt-9 xl:mt-10;
-  }
-
-  .gap-mt-32 {
-    @apply mt-4 sm:mt-5 md:mt-6 lg:mt-7 xl:mt-8;
-  }
-
-  .gap-mt-28 {
-    @apply mt-3.5 sm:mt-4 md:mt-5 lg:mt-6 xl:mt-7;
-  }
-
-  .gap-mt-24 {
-    @apply mt-3.5 sm:mt-4 md:mt-5 lg:mt-6;
-  }
-
-  .gap-mt-20 {
-    @apply mt-3 md:mt-4 lg:mt-5;
-  }
-
-  .gap-mt-16 {
-    @apply mt-2.5 md:mt-3 lg:mt-4;
-  }
-
-  // my gap my end
-
-  .gap-my-32 {
-    @apply my-4 sm:my-5 md:my-6 lg:my-7 xl:my-8;
-  }
-
-  /* Gap start */
-  .my-gap-16 {
-    @apply gap-3 sm:gap-4;
-  }
-
-  .my-gap-20 {
-    @apply gap-3 md:gap-4 lg:gap-5;
-  }
-
-  .my-gap-24 {
-    @apply gap-4 md:gap-5 lg:gap-6;
-  }
-
-  .my-gap-28 {
-    @apply gap-5 md:gap-6 lg:gap-7;
-  }
-
-  .my-gap-32 {
-    @apply gap-6 md:gap-7 lg:gap-8;
-  }
-
-  .my-gap-40 {
-    @apply gap-6 sm:gap-7 md:gap-8 lg:gap-9 xl:gap-10;
-  }
-
-  /* Gap end */
+  /* common margin end */
 
   // common padding start
-
-  /* 20px padding utilities */
+  /* 16px padding utilities */
   .p-16px {
     @apply p-3 sm:p-3.5 md:p-4;
   }
-
   .px-16px {
     @apply px-3 sm:px-3.5 md:px-4;
   }
-
   .py-16px {
     @apply py-3 sm:py-3.5 md:py-4;
   }
-
   .pb-16px {
     @apply pb-3 sm:pb-3.5 md:pb-4;
   }
-
   .pt-16px {
     @apply pt-3 sm:pt-3.5 md:pt-4;
   }
@@ -409,19 +417,15 @@
   .p-20px {
     @apply p-3 sm:p-3.5 md:p-4 lg:p-5;
   }
-
   .px-20px {
     @apply px-3 sm:px-3.5 md:px-4 lg:px-5;
   }
-
   .py-20px {
     @apply py-3 sm:py-3.5 md:py-4 lg:py-5;
   }
-
   .pb-20px {
     @apply pb-3 sm:pb-3.5 md:pb-4 lg:pb-5;
   }
-
   .pt-20px {
     @apply pt-3 sm:pt-3.5 md:pt-4 lg:pt-5;
   }
@@ -430,19 +434,15 @@
   .p-24px {
     @apply p-3 md:p-4 lg:p-5 xl:p-6;
   }
-
   .px-24px {
     @apply px-3 md:px-4 lg:px-5 xl:px-6;
   }
-
   .py-24px {
     @apply py-3 md:py-4 lg:py-5 xl:py-6;
   }
-
   .pb-24px {
     @apply pb-3 md:pb-4 lg:pb-5 xl:pb-6;
   }
-
   .pt-24px {
     @apply pt-3 md:pt-4 lg:pt-5 xl:pt-6;
   }
@@ -451,19 +451,15 @@
   .p-28px {
     @apply p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7;
   }
-
   .px-28px {
     @apply px-3 sm:px-4 md:px-5 lg:px-6 xl:px-7;
   }
-
   .py-28px {
     @apply py-3 sm:py-4 md:py-5 lg:py-6 xl:py-7;
   }
-
   .pb-28px {
     @apply pb-3 sm:pb-4 md:pb-5 lg:pb-6 xl:pb-7;
   }
-
   .pt-28px {
     @apply pt-3 sm:pt-4 md:pt-5 lg:pt-6 xl:pt-7;
   }
@@ -472,19 +468,15 @@
   .p-32px {
     @apply p-3.5 sm:p-5 md:p-6 lg:p-7 xl:p-8;
   }
-
   .px-32px {
     @apply px-3.5 sm:px-5 md:px-6 lg:px-7 xl:px-8;
   }
-
   .py-32px {
     @apply py-3.5 sm:py-5 md:py-6 lg:py-7 xl:py-8;
   }
-
   .pb-32px {
     @apply pb-3.5 sm:pb-5 md:pb-6 lg:pb-7 xl:pb-8;
   }
-
   .pt-32px {
     @apply pt-3.5 sm:pt-5 md:pt-6 lg:pt-7 xl:pt-8;
   }
@@ -493,19 +485,15 @@
   .p-40px {
     @apply p-5 sm:p-6 md:p-8 lg:p-9 xl:p-10;
   }
-
   .px-40px {
     @apply px-5 sm:px-6 md:px-8 lg:px-9 xl:px-10;
   }
-
   .py-40px {
     @apply py-5 sm:py-6 md:py-8 lg:py-9 xl:py-10;
   }
-
   .pb-40px {
     @apply pb-5 sm:pb-6 md:pb-8 lg:pb-9 xl:pb-10;
   }
-
   .pt-40px {
     @apply pt-5 sm:pt-6 md:pt-8 lg:pt-9 xl:pt-10;
   }
@@ -514,19 +502,15 @@
   .p-60px {
     @apply p-8 md:p-10 lg:p-12 xl:p-14 3xl:p-[60px];
   }
-
   .px-60px {
     @apply px-8 md:px-10 lg:px-12 xl:px-14 3xl:px-[60px];
   }
-
   .py-60px {
     @apply py-8 md:py-10 lg:py-12 xl:py-14 3xl:py-[60px];
   }
-
   .pb-60px {
     @apply pb-8 md:pb-10 lg:pb-12 xl:pb-14 3xl:pb-[60px];
   }
-
   .pt-60px {
     @apply pt-8 md:pt-10 lg:pt-12 xl:pt-14 3xl:pt-[60px];
   }
@@ -535,19 +519,15 @@
   .p-80px {
     @apply p-8 sm:p-9 md:p-10 lg:p-15 xl:p-18 xxl:p-20;
   }
-
   .px-80px {
     @apply px-8 sm:px-9 md:px-10 lg:px-15 xl:px-18 xxl:px-20;
   }
-
   .py-80px {
     @apply py-8 sm:py-9 md:py-10 lg:py-15 xl:py-18 xxl:py-20;
   }
-
   .pb-80px {
     @apply pb-8 sm:pb-9 md:pb-10 lg:pb-15 xl:pb-18 xxl:pb-20;
   }
-
   .pt-80px {
     @apply pt-8 sm:pt-9 md:pt-10 lg:pt-15 xl:pt-18 xxl:pt-20;
   }
@@ -572,30 +552,158 @@
   .px-40-py-60px {
     @apply px-4 py-8 sm:px-5 md:px-6 lg:px-7 xl:px-8 sm:py-10  md:py-12  lg:py-14 xl:py-[60px];
   }
-
   /* common padding end*/
 
-  /* my flex start*/
-  .flex-center {
+  /* Custom Flex Utilities Start */
+  /* Flex with both horizontal and vertical centering */
+  .flex-c {
     @apply flex items-center justify-center;
   }
 
-  .flex-centerX {
+  /* Flex with horizontal centering */
+  .flex-x {
     @apply flex justify-center;
   }
 
-  .flex-centerY {
+  /* Flex with vertical centering */
+  .flex-y {
     @apply flex items-center;
   }
 
-  /* my flex end*/
+  /* Flex column with both horizontal and vertical centering */
+  .flex-col-c {
+    @apply flex flex-col items-center justify-center;
+  }
 
-  /* gap m end */
+  /* Flex with space between items and vertical centering */
+  .flex-between-y {
+    @apply flex items-center justify-between;
+  }
 
-  /* rounded start */
+  /* Flex with space around items and vertical centering */
+  .flex-around-y {
+    @apply flex items-center justify-around;
+  }
 
+  /* Flex that wraps items with both horizontal and vertical centering */
+  .flex-wrap-c {
+    @apply flex flex-wrap items-center justify-center;
+  }
+
+  /* Flex with items aligned to the start (top-left) */
+  .flex-start {
+    @apply flex items-start justify-start;
+  }
+
+  /* Flex with items aligned to the end (bottom-right) */
+  .flex-end {
+    @apply flex items-end justify-end;
+  }
+
+  /* Additional Custom Flex Utilities */
+  /* Flex column with top alignment */
+  .flex-col-top {
+    @apply flex flex-col items-start;
+  }
+
+  /* Flex column with bottom alignment */
+  .flex-col-bottom {
+    @apply flex flex-col items-end;
+  }
+
+  /* Flex row with left alignment */
+  .flex-row-left {
+    @apply flex flex-row justify-start;
+  }
+
+  /* Flex row with right alignment */
+  .flex-row-right {
+    @apply flex flex-row justify-end;
+  }
+
+  /* Flex with space-evenly distribution */
+  .flex-evenly {
+    @apply flex justify-evenly;
+  }
+
+  /* Flex column with space between items */
+  .flex-col-between {
+    @apply flex flex-col justify-between;
+  }
+
+  /* Flex that wraps items with space between */
+  .flex-wrap-between {
+    @apply flex flex-wrap justify-between;
+  }
+
+  /* Flex with items aligned to baseline */
+  .flex-baseline {
+    @apply flex items-baseline;
+  }
+  /* Custom Flex Utilities end */
+
+  /* Custom Grid Utilities end */
+  /* Center items in grid both horizontally and vertically */
+  .grid-center {
+    @apply grid place-items-center;
+  }
+
+  /* Auto-fit grid with minimum column width of 200px */
+  .grid-auto-fit {
+    @apply grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4;
+  }
+
+  /* Auto-fill grid with minimum column width of 200px */
+  .grid-auto-fill {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4;
+  }
+
+  /* Grid with a sidebar layout */
+  .grid-sidebar {
+    @apply grid grid-cols-[200px,1fr] gap-4;
+  }
+
+  /* Grid with header, main content, and footer */
+  .grid-layout {
+    @apply grid grid-rows-[auto,1fr,auto] min-h-screen;
+  }
+
+  /* Grid with equal height rows */
+  .grid-equal-rows {
+    @apply grid grid-rows-[1fr,1fr,1fr];
+  }
+
+  /* Grid with dense packing algorithm */
+  .grid-dense {
+    @apply grid grid-flow-dense;
+  }
+
+  /* Grid with items aligned to start */
+  .grid-start {
+    @apply grid justify-items-start;
+  }
+
+  /* Grid with items aligned to end */
+  .grid-end {
+    @apply grid justify-items-end;
+  }
+  /* Custom Grid Utilities end */
+
+  /* Common Rounded Utility Classes */
   .rounded-40 {
     @apply rounded-3xl sm:rounded-[28px] md:rounded-[32px] lg:rounded-[36px] xl:rounded-[40px];
+  }
+
+  .rounded-30 {
+    @apply rounded-3xl sm:rounded-[26px] md:rounded-[28px] lg:rounded-[30px];
+  }
+
+  .rounded-28 {
+    @apply rounded-2xl sm:rounded-[26px] md:rounded-[28px] lg:rounded-[30px];
+  }
+
+  .rounded-24 {
+    @apply rounded-2xl md:rounded-[20] lg:rounded-[24px];
   }
 
   .rounded-20 {
@@ -609,15 +717,9 @@
   .rounded-10 {
     @apply rounded-lg sm:rounded-[10px];
   }
-
-  .rounded-4 {
-    @apply rounded-[4px];
-  }
-
   /* rounded end */
 
   // size start
-
   .size-40px {
     @apply lg:size-20 md:size-18 sm:size-16 size-15;
   }

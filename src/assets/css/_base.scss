@@ -1,0 +1,7 @@
+body {
+  @apply text-dark-800 dark:text-dark-100;
+}
+
+code {
+  @apply rounded bg-dark-100 p-1 text-xs tracking-wide text-dark-500 dark:bg-dark-600 dark:text-dark-300;
+}

@@ -1,0 +1,15 @@
+@layer components {
+  /* Tabs */
+  .tab-list {
+    @apply flex flex-wrap items-center gap-x-6 gap-y-2 border-b-2 border-dark-200 text-sm tracking-wide dark:border-dark-700;
+  }
+
+  .tab {
+    margin-bottom: -2px;
+    @apply cursor-pointer whitespace-nowrap py-3 text-dark-800 outline-none dark:text-dark-100;
+  }
+
+  .tab.active {
+    @apply border-b-2 border-primary-500 text-primary-500;
+  }
+}
