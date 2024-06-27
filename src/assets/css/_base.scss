@@ -1,7 +1,9 @@
+/* Hide elements with x-cloak attribute (for Alpine.js) */
 [x-cloak] {
   display: none;
 }
 
+/* Global Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -10,6 +12,7 @@ body {
   background-color: #fff;
 }
 
+/* Typography */
 h1,
 h2,
 h3,
@@ -38,10 +41,7 @@ span {
   font-family: var(--font-dm_sans) !important;
 }
 
-.font-dm_sans {
-  font-family: var(--font-dm_sans) !important;
-}
-
+/* Header Animation */
 .header-animation {
   position: fixed;
   top: 0;
@@ -57,17 +57,13 @@ span {
     opacity: 0;
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/*================ scroll bar style start ================ */
-
-/* Scrollbar style start */
-
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -93,8 +89,8 @@ span {
   padding-left: 4px;
   background-color: transparent;
 }
-/*================ scroll bar style end ================ */
 
+/* Button and Input Styles */
 button {
   line-height: 0px;
 }
@@ -103,13 +99,14 @@ input:focus {
   outline: none !important;
 }
 
+/* Remove number input spinners */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Web kit */
+/* Webkit specific styles */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -119,13 +116,10 @@ input::-webkit-inner-spin-button {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   opacity: 1;
-  //   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
+/* Firefox specific styles */
 input[type="number"] {
   -moz-appearance: textfield;
 }
-
-/*Web kit end */
