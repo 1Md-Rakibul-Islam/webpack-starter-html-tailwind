@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import colors from "tailwindcss/colors";
 const plugin = require("tailwindcss/plugin");
 module.exports = {
   content: ["./src/**/*.{html,js}"],
@@ -16,42 +17,24 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#B2E89D",
-        secondary: "#053A2B",
-        paste: "#2CAA80",
-        warning: "#FFB800",
-        "soft-secondary": {
-          1: "#F6FCF3",
-          2: "#EDFBF7",
-          3: "#F5F6F7",
+        primary: {
+          50: "#e6f6f6",
+          100: "#cdeded",
+          200: "#81d3d3",
+          300: "#4fc1c1",
+          400: "#1cafaf",
+          500: "#03a6a6",
+          600: "#039595",
+          700: "#027474",
+          800: "#026464",
+          900: "#025353",
         },
-        neutral: {
-          0: "#ffffff",
-          20: "rgba(245,245,245,0.32)",
-          25: "#f5f5f5",
-          50: "#E2E2E2",
-          100: "#CECECE",
-          200: "#BABABA",
-          300: "#A7A7A7",
-          400: "#939393",
-          500: "#808080",
-          600: "#6C6C6C",
-          700: "#585858",
-          800: "#454545",
-          850: "#4A4A4A",
-          900: "#313131",
-        },
-        glass: {
-          1: "rgba(255,255,255,0.24)",
-        },
-        "soft-n": {
-          20: "rgba(245, 245, 245, 0.32)",
-          50: "rgba(226, 226, 226, 0.12)",
-          900: "rgba(49, 49, 49, 0.24)",
-          980: "#171f0da6",
-          950: "#112817",
-          1000: "#053A2B66",
-        },
+        secondary: colors.gray,
+        success: colors.emerald,
+        warning: colors.amber,
+        danger: colors.rose,
+        info: colors.indigo,
+        dark: colors.gray,
       },
 
       keyframes: {

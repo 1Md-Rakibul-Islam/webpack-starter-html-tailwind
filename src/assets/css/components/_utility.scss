@@ -150,7 +150,7 @@
 
   /* Badge Start*/
   .badge {
-    @apply inline-flex items-center justify-center rounded-primary px-2 py-0.5 text-xs;
+    @apply inline-flex items-center justify-center px-2 py-0.5 text-xs;
 
     &-circle {
       @apply h-5 w-5 rounded-full p-0;
