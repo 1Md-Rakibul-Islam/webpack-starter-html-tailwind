@@ -28,6 +28,7 @@
     "webpack-dev-server": "^5.0.2"
   },
   "dependencies": {
+    "css-minimizer-webpack-plugin": "^7.0.0",
     "sass": "^1.72.0",
     "sass-loader": "^14.1.1"
   }
