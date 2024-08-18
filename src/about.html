@@ -1,19 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Template</title>
+    <!-- animate.css for wow.js -->
+    <link rel="stylesheet" href="./assets/css/third-party/animate.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/swiper.min.css" />
+    <!-- Phosphor icons -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css">
+    <!-- Alpine Style -->
+    <!-- Odomiter CSS -->
+    <link rel="stylesheet" href="./assets/css/third-party/odometer.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- flatpickr for datetime picker -->
+    <link rel="stylesheet" href="./assets/css/third-party/flatpickr.min.css">
+    <!-- style css -->
+    <title>CrypGo - HTML Tailwind CSS</title>
 </head>
 
-<body>
-    <p class="text-6xl">Hello, This is About page</p>
-    <p class="text-6xl">Go to <a href="./index.html" class="underline">Home</a></p>
-    <!-- check partials -->
-    <include-check />
+<body class="bg-white">
+
+    <!-- preloader start -->
+    <include-preloader />
+    <!-- preloader end -->
+
+    <!-- scroll to top button start -->
+    <include-scrollToTop />
+    <!-- scroll to top button end -->
+
+    <!-- header start -->
+    <include-navbar />
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+
+        <!-- about banner start -->
+        <section class="relative overflow-x-hidden lg:-pt-0 -pt-8 section-pt">
+            <div class="container">
+                <div class="grid lg:grid-cols-12 grid-cols-1 my-gap-24">
+                    <div class="lg:col-start-1 xxl:col-end-8 lg:col-end-7 lg:pt-0 section-pt lg:mb-0 gap-mb-40">
+                        <div class="lg:section-py flex items-center h-full">
+                            <div>
+                                <h5 class="text-28 text-dg-1 gap-mb-16 wow fadeInUp" data-wow-duration="0.8s">
+                                    About
+                                </h5>
+                                <span class="linebar-gradient wow fadeInUp" data-wow-duration="0.8s"></span>
+                                <h2 class="text-67 text-dg-1 gap-mb-32 wow fadeInUp" data-wow-duration="0.8s">
+                                    Treat others as they wish to be <span class="text-o-1">treated.</span>
+                                </h2>
+                                <a href="./contact-us.html" class="btn btn-secondary">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-start-8 lg:col-start-7 lg:col-end-13">
+                        <img class="lg:max-w-[unset] h-auto lg:h-full" src="./assets/images/photos/aboutBanner.jpg"
+                            alt="banner" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about banner end -->
+
+        <!-- counter section start -->
+        <section class="section-py bg-n-7">
+            <div class="container">
+                <div class="gap-mb-60">
+                    <h1 class="text-67 text-dg-1 text-center mb-3.5 wow fadeInUp" data-wow-duration="0.8s">Therapy for
+                        How We Live</h1>
+                    <div class="flex justify-end wow fadeInUp" data-wow-duration="0.8s">
+                        <div
+                            class="flex lg:justify-end justify-center items-center flex-wrap xxl:gap-x-15 xl:gap-x-14 gap-x-12 gap-y-6">
+                            <div class="flex items-center xxl:gap-5 xl:gap-4 lg:gap-3 md:gap-2 gap-1">
+                                <div
+                                    class="glitch-effect xl:w-15 lg:w-14 md:w-12 sm:w-11 w-10 xl:h-[78px] lg:h-16 md:h-14 h-12 rounded-full border border-o-2">
+                                    <div class="glitch-thumb">
+                                        <img class="w-full xxl:h-[110px] xl:h-25 lg:h-20 md:h-18 h-16"
+                                            src="./assets/images/photos/videoImg.png" alt="img" />
+                                    </div>
+                                    <div class="glitch-thumb">
+                                        <img class="w-full xxl:h-[110px] xl:h-25 lg:h-20 md:h-18 h-16"
+                                            src="./assets/images/photos/videoImg.png" alt="img" />
+                                    </div>
+                                </div>
+
+                                <button id="modal-open-btn"
+                                    class="popup-video flex justify-center items-center  xl:w-15 lg:w-14 md:w-12 sm:w-11 w-10 xl:h-[78px] lg:h-16 md:h-14 h-12 rounded-full bg-o-1  sm:text-[28px] text-2xl text-white">
+                                    <i class="ph ph-play"></i>
+                                </button>
+                                <!-- Popup video modal start-->
+                                <include-popup-video-modal />
+                                <!-- Popup video modal start-->
+
+                                <div
+                                    class="glitch-effect xl:w-15 lg:w-14 md:w-12 sm:w-11 w-10 xl:h-[78px] lg:h-16 md:h-14 h-12 rounded-full border border-o-2">
+                                    <div class="glitch-thumb">
+                                        <img class="w-full xxl:h-[110px] xl:h-25 lg:h-20 md:h-18 h-16"
+                                            src="./assets/images/photos/videoImg.png" alt="img" />
+                                    </div>
+                                    <div class="glitch-thumb">
+                                        <img class="w-full xxl:h-[110px] xl:h-25 lg:h-20 md:h-18 h-16"
+                                            src="./assets/images/photos/videoImg2.png" alt="img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="text-67 text-o-1">Today</h1>
+                            <p class="text-18 text-n-2 lg:w-[340px] lg:text-left text-center">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid xxl:grid-cols-4 sm:grid-cols-2 grid-cols-1 my-gap-60 sm:text-left text-center *:flex sm:*:flex-col *:flex-col-reverse wow fadeInUp"
+                    data-wow-duration="0.8s">
+                    <div class="sm:border-x border-o-1 px-24px">
+                        <p class="text-18 text-n-2 xxl:mb-25 xl:mb-18 lg:mb-15 md:mb-10 sm:mb-6 mt-2">
+                            Our experts deliver unparalleled therapeutic care.
+                        </p>
+                        <div class="flex items-center sm:justify-start justify-center gap-1 text-80">
+                            <h1 data-counter-value="25" class="odometer ">0</h1>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="sm:border-r border-o-1 px-24px">
+                        <p class="text-18 text-n-2 xxl:mb-25 xl:mb-18 lg:mb-15 md:mb-10 sm:mb-6 mt-2">Decades of
+                            experience in
+                            transformative counseling.
+                        </p>
+                        <div class="flex items-center sm:justify-start justify-center gap-1 text-80">
+                            <span>$</span>
+                            <h1 data-counter-value="4" class="odometer ">0</h1>
+                            <span>m+</span>
+                        </div>
+                    </div>
+                    <div class="sm:border-r sm:border-l border-o-1 px-24px">
+                        <p class="text-18 text-n-2 xxl:mb-25 xl:mb-18 lg:mb-15 md:mb-10 sm:mb-6 mt-2">Empowering clients
+                            to
+                            conquer their inner obstacles.
+                        </p>
+                        <div class="flex items-center sm:justify-start justify-center gap-1 text-80">
+                            <h1 data-counter-value="870" class="odometer ">0</h1>
+                            <span>+</span>
+                        </div>
+                    </div>
+                    <div class="sm:border-r border-o-1 px-24px">
+                        <p class="text-18 text-n-2 xxl:mb-25 xl:mb-18 lg:mb-15 md:mb-10 sm:mb-6 mt-2">Exceptional
+                            success in
+                            elevating well-being and
+                            healing.</p>
+                        <div class="flex items-center sm:justify-start justify-center gap-1 text-80">
+                            <h1 data-counter-value="99.9" class="odometer ">0</h1>
+                            <span>%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- counter section end -->
+
+        <!-- services section start -->
+        <include-services />
+        <!-- services section end -->
+
+        <!-- our-team section start -->
+        <include-teams-slider />
+        <!-- our-team section end -->
+
+        <!-- apointment book section start -->
+        <include-appointment-book-one />
+        <!-- apointment book section end -->
+
+        <!-- faq section start -->
+        <include-all-faqs />
+        <!-- faq section end -->
+
+        <!-- join Us section start -->
+        <include-join-us />
+        <!-- join Us section end -->
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <include-footer />
+    <!-- footer end -->
+
     <!-- ==== js dependencies start ==== -->
-    <script src="./index.js"></script>
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/plugins/alpine.js"></script>
+    <script src="./assets/js/plugin-custom.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- ==== js dependencies start ==== -->
+
 </body>
 
 </html>

@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HTML Template</title>
+  <!-- animate.css for wow.js -->
+  <link rel="stylesheet" href="./assets/css/third-party/animate.min.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./assets/css/third-party/swiper.min.css" />
+  <!-- Phosphor icons -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/fill/style.css">
+  <!-- Alpine Style -->
+  <!-- Odomiter CSS -->
+  <link rel="stylesheet" href="./assets/css/third-party/odometer.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <!-- flatpickr for datetime picker -->
+  <link rel="stylesheet" href="./assets/css/third-party/flatpickr.min.css">
+  <!-- style css -->
+  <title>CrypGo - HTML Tailwind CSS</title>
 </head>
 
-<body>
-  <p class="text-6xl">Hello, This is Home page</p>
-  <p class="text-6xl">Go to <a href="./about.html" class="underline">About</a></p>
-  <include-check />
-  <include-our-blog />
+<body class="bg-white">
+
+  <!-- preloader start -->
+  <!-- <include-preloader /> -->
+  <!-- preloader end -->
+
+  <!-- scroll to top button start -->
+  <include-scrollToTop />
+  <!-- scroll to top button end -->
+
+  <!-- header start -->
+  <include-navbar />
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+
+    <!-- home hero banner start -->
+    <section>
+      <div class="container">
+        <h2>Hello World</h2>
+      </div>
+    </section>
+    <!-- home hero banner start -->
+
+  </main>
+  <!-- main end -->
+
+  <!-- footer start -->
+  <include-footer />
+  <!-- footer end -->
+
   <!-- ==== js dependencies start ==== -->
-  <script src="./index.js"></script>
+  <script src="./assets/js/plugins/plugins.js"></script>
+  <script src="./assets/js/plugins/alpine.js"></script>
+  <script src="./assets/js/plugin-custom.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <!-- ==== js dependencies start ==== -->
+
 </body>
 
 </html>

@@ -1,0 +1,246 @@
+@layer components {
+  /* Custom Flex Utilities Start */
+
+  /* Flex with both horizontal and vertical centering */
+  .flex-c {
+    @apply flex items-center justify-center;
+  }
+
+  /* Flex with horizontal centering */
+  .flex-x {
+    @apply flex justify-center;
+  }
+
+  /* Flex with vertical centering */
+  .flex-y {
+    @apply flex items-center;
+  }
+
+  /* Flex column with both horizontal and vertical centering */
+  .flex-col-c {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  /* Flex with space between items and vertical centering */
+  .flex-between-y {
+    @apply flex items-center justify-between;
+  }
+
+  /* Flex with space around items and vertical centering */
+  .flex-around-y {
+    @apply flex items-center justify-around;
+  }
+
+  /* Flex that wraps items with both horizontal and vertical centering */
+  .flex-wrap-c {
+    @apply flex flex-wrap items-center justify-center;
+  }
+
+  /* Flex with items aligned to the start (top-left) */
+  .flex-start {
+    @apply flex items-start justify-start;
+  }
+
+  /* Flex with items aligned to the end (bottom-right) */
+  .flex-end {
+    @apply flex items-end justify-end;
+  }
+
+  /* Additional Custom Flex Utilities */
+  /* Flex column with top alignment */
+  .flex-col-top {
+    @apply flex flex-col items-start;
+  }
+
+  /* Flex column with bottom alignment */
+  .flex-col-bottom {
+    @apply flex flex-col items-end;
+  }
+
+  /* Flex row with left alignment */
+  .flex-row-left {
+    @apply flex flex-row justify-start;
+  }
+
+  /* Flex row with right alignment */
+  .flex-row-right {
+    @apply flex flex-row justify-end;
+  }
+
+  /* Flex with space-evenly distribution */
+  .flex-evenly {
+    @apply flex justify-evenly;
+  }
+
+  /* Flex column with space between items */
+  .flex-col-between {
+    @apply flex flex-col justify-between;
+  }
+
+  /* Flex that wraps items with space between */
+  .flex-wrap-between {
+    @apply flex flex-wrap justify-between;
+  }
+
+  /* Flex with items aligned to baseline */
+  .flex-baseline {
+    @apply flex items-baseline;
+  }
+  /* Custom Flex Utilities end */
+
+  /* Custom Grid Utilities end */
+  /* Center items in grid both horizontally and vertically */
+  .grid-center {
+    @apply grid place-items-center;
+  }
+
+  /* Auto-fit grid with minimum column width of 200px */
+  .grid-auto-fit {
+    @apply grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4;
+  }
+
+  /* Auto-fill grid with minimum column width of 200px */
+  .grid-auto-fill {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4;
+  }
+
+  /* Grid with a sidebar layout */
+  .grid-sidebar {
+    @apply grid grid-cols-[200px,1fr] gap-4;
+  }
+
+  /* Grid with header, main content, and footer */
+  .grid-layout {
+    @apply grid grid-rows-[auto,1fr,auto] min-h-screen;
+  }
+
+  /* Grid with equal height rows */
+  .grid-equal-rows {
+    @apply grid grid-rows-[1fr,1fr,1fr];
+  }
+
+  /* Grid with dense packing algorithm */
+  .grid-dense {
+    @apply grid grid-flow-dense;
+  }
+
+  /* Grid with items aligned to start */
+  .grid-start {
+    @apply grid justify-items-start;
+  }
+
+  /* Grid with items aligned to end */
+  .grid-end {
+    @apply grid justify-items-end;
+  }
+  /* Custom Grid Utilities end */
+
+  /* Gap utilities for flex and grid */
+
+  /* 16 pixel gap */
+  .gap-16p {
+    @apply gap-3 sm:gap-4;
+  }
+
+  .gap-x-16p {
+    @apply gap-x-3 sm:gap-x-4;
+  }
+
+  .gap-y-16p {
+    @apply gap-y-3 sm:gap-y-4;
+  }
+
+  /* 20 pixel gap */
+  .gap-20p {
+    @apply gap-3 md:gap-4 lg:gap-5;
+  }
+
+  .gap-x-20p {
+    @apply gap-x-3 md:gap-x-4 lg:gap-x-5;
+  }
+
+  .gap-y-20p {
+    @apply gap-y-3 md:gap-y-4 lg:gap-y-5;
+  }
+
+  /* 24 pixel gap */
+  .gap-24p {
+    @apply gap-4 md:gap-5 lg:gap-6;
+  }
+
+  .gap-x-24p {
+    @apply gap-x-4 md:gap-x-5 lg:gap-x-6;
+  }
+
+  .gap-y-24p {
+    @apply gap-y-4 md:gap-y-5 lg:gap-y-6;
+  }
+
+  /* 28 pixel gap */
+  .gap-28p {
+    @apply gap-5 md:gap-6 lg:gap-7;
+  }
+
+  .gap-x-28p {
+    @apply gap-x-5 md:gap-x-6 lg:gap-x-7;
+  }
+
+  .gap-y-28p {
+    @apply gap-y-5 md:gap-y-6 lg:gap-y-7;
+  }
+
+  /* 32 pixel gap */
+  .gap-32p {
+    @apply gap-6 md:gap-7 lg:gap-8;
+  }
+
+  .gap-x-32p {
+    @apply gap-x-6 md:gap-x-7 lg:gap-x-8;
+  }
+
+  .gap-y-32p {
+    @apply gap-y-6 md:gap-y-7 lg:gap-y-8;
+  }
+
+  /* 40 pixel gap */
+  .gap-40p {
+    @apply gap-6 sm:gap-7 md:gap-8 lg:gap-9 xl:gap-10;
+  }
+
+  .gap-x-40p {
+    @apply gap-x-6 sm:gap-x-7 md:gap-x-8 lg:gap-x-9 xl:gap-x-10;
+  }
+
+  .gap-y-40p {
+    @apply gap-y-6 sm:gap-y-7 md:gap-y-8 lg:gap-y-9 xl:gap-y-10;
+  }
+
+  /* Additional gap sizes */
+
+  /* 48 pixel gap */
+  .gap-48p {
+    @apply gap-8 md:gap-10 lg:gap-12;
+  }
+
+  .gap-x-48p {
+    @apply gap-x-8 md:gap-x-10 lg:gap-x-12;
+  }
+
+  .gap-y-48p {
+    @apply gap-y-8 md:gap-y-10 lg:gap-y-12;
+  }
+
+  /* 60 pixel gap */
+  .gap-60p {
+    @apply gap-10 md:gap-12 lg:gap-14 xl:gap-15;
+  }
+
+  .gap-x-60p {
+    @apply gap-x-10 md:gap-x-12 lg:gap-x-14 xl:gap-x-15;
+  }
+
+  .gap-y-60p {
+    @apply gap-y-10 md:gap-y-12 lg:gap-y-14 xl:gap-y-15;
+  }
+  // Gap utilities for flex and grid end
+}

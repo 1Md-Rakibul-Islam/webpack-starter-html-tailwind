@@ -1,0 +1,108 @@
+<header id="header" class="absolute w-full z-50">
+    <div class="mx-auto relative">
+        <div id="header-nav" class="w-full xxl:px-[60px] xl:px-10 lg:px-8 md:px-7 sm:px-6 px-4 relative">
+            <div class="flex items-center justify-between gap-x-2 mx-auto lg:py-5 sm:py-4 py-3.5">
+                <nav class="w-full flex justify-between items-center text-semibold">
+                    <div class="flex items-center gap-x-12">
+                        <a href="index.html">
+                            <img class="md:w-[140px] sm:w-30 w-25 h-auto" src="./assets/images/icons/logo.png"
+                                alt="brand" />
+                        </a>
+                        <div class="xl:block hidden">
+                            <ul class="menus">
+                                <li class="menu">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="menu">
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li class="submenu group">
+                                    <span class="submenu-btn">Blogs</span>
+                                    <span class="submenu-icon">
+                                        <i class="ph ph-caret-down"></i>
+                                    </span>
+                                    <ul class="submenu-options group">
+                                        <li class="submenu-link">
+                                            <a href="blogs.html">Blogs</a>
+                                        </li>
+                                        <li class="submenu-link">
+                                            <a href="blog-details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex items-center flex-wrap gap-2 relative">
+                        <div>
+                            <button
+                                class="rounded-full md:size-15 sm:size-14 size-10 flex justify-center items-center  relative bg-lg-2 text-white">
+                                <span
+                                    class="absolute sm:-top-1 -top-2 right-0 text-xs bg-o-1 rounded-full sm:size-5 size-4 flex justify-center items-center ">
+                                    2
+                                </span>
+                                <span class="md:text-[32px] sm:text-[28px] text-2xl">
+                                    <i class="ph ph-shopping-cart"></i>
+                                </span>
+                            </button>
+                        </div>
+
+                        <button
+                            class="nav-toggole text-3xl cursor-pointer text-dg-1 hover:text-o-1 transition-1 xl:hidden block">
+                            <i class="ph ph-list"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <nav class="w-full flex justify-between items-center ">
+                <div class="relative">
+                    <div
+                        class="small-nav fixed top-0 left-0 h-screen w-full shadow-lg z-[999] transform transition-transform ease-in-out -translate-x-full duration-500 flex xl:hidden justify-start items-start gap-8 flex-col">
+                        <div
+                            class="absolute overflow-y-scroll scrollbar scrollbar-sm top-0 bottom-0 z-[2000] sm:w-[400px] w-full  bg-dg-1 sm:p-12 p-8">
+                            <div class="relative flex justify-between items-center gap-mb-48">
+                                <a href="index.html">
+                                    <img class="w-[142px]" src="./assets/images/icons/logo2.png" alt="mentorx" />
+                                </a>
+                                <button
+                                    class="nav-close text-xl cursor-pointer hover:duration-200 text-white hover:text-o-1">
+                                    <i class="ph ph-x"></i>
+                                </button>
+                            </div>
+
+                            <ul class="flex flex-col justify-center items-start gap-5 text-white">
+                                <li class="mobail-menu">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="mobail-menu">
+                                    <a href="about.html">About</a>
+                                </li>
+                                <li class="sub-menu mobail-submenu">
+                                    <span class="mobail-submenu-btn">
+                                        <span class="text-24 submenu-btn">Blogs</span>
+                                        <span class="collapse-icon mobail-submenu-icon">
+                                            <i class="ph ph-caret-down "></i>
+                                        </span>
+                                    </span>
+                                    <ul class="grid gap-y-3">
+                                        <li>
+                                            <a aria-label="item" class="text-20 hover:text-o-1 transition-1"
+                                                href="blogs.html"><span class="px-2">-</span>
+                                                Blogs</a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="item" class="text-20 hover:text-o-1 transition-1"
+                                                href="blog-details.html"><span class="px-2">-</span>
+                                                Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="nav-overly" class="min-h-[200vh] overly-1"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

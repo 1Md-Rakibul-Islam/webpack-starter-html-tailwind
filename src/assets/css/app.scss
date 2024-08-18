@@ -1,0 +1,28 @@
+:root {
+  --font-inter: "Inter", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Third party libraries
+
+// Custom styles
+@import "base";
+@import "reset";
+
+// Tailwind typography, spacing, sizing and custom utilities
+@import "./components/typography";
+@import "./components/spacing";
+@import "./components/sizing";
+@import "./components/box_layout";
+// Tailwind ui components
+@import "./components/components";
+
+// custom utility classes
+@import "./utility";
+
+// Project styles
+@import "./main";
+@import "./section";

@@ -1,0 +1,143 @@
+/* Swiper Gallery Thumb Design */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-gallery-main {
+  width: 100%;
+}
+
+.swiper-thumbs {
+  box-sizing: border-box;
+}
+
+.swiper-thumbs .swiper-slide {
+  background-color: #f5f5f5;
+}
+
+.swiper-thumbs .swiper-slide-thumb-active {
+  border: 1px solid #6d8c36;
+}
+
+/* Swiper Pagination Bullet */
+.blogs-one-carousel,
+.courses-carousel {
+  .swiper-pagination-bullet {
+    background-color: #575757 !important;
+    width: 24px;
+    height: 8px;
+    border-radius: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #6d8c36 !important;
+    width: 40px;
+    height: 8px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Swiper slider design start */
+.swiper-slide {
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* swiper pagination bullet */
+.testimonials-carousel-2 .swiper-pagination-bullet {
+  background-color: #6e7677 !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: 1px solid #00363d !important;
+}
+
+.testimonials-carousel-2 .swiper-pagination-bullet-active {
+  background-color: #00363d !important;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: 1px solid #00363d !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* infinity slide */
+.text-carousel .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.home-banner-carousel .swiper-pagination-bullet {
+  background-color: #18240a;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.home-banner-carousel
+  .swiper-pagination-bullet
+  .swiper-pagination-bullet-active {
+  transform: scaleY(1.5);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Swiper slider design end */
+
+/* custom range slide start */
+
+.products-price-range .range-slider {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+.products-price-range .range-slider .slider-track {
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.products-price-range .range-slider input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.products-price-range
+  .range-slider
+  input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px;
+}
+
+.products-price-range .range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 11px;
+  border: 1px solid #18240a;
+  cursor: pointer;
+  margin-top: -5px;
+  pointer-events: auto;
+}
+
+/* custom range slide end */

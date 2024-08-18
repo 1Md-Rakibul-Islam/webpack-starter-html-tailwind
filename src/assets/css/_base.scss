@@ -1,0 +1,129 @@
+/* Hide elements with x-cloak attribute (for Alpine.js) */
+[x-cloak] {
+  display: none;
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-dm_sans);
+}
+
+label {
+  font-family: var(--font-dm_sans);
+  display: block;
+}
+
+p,
+span,
+li {
+  font-family: var(--font-dm_sans);
+}
+
+span {
+  display: block;
+}
+
+.font-dm_sans {
+  font-family: var(--font-dm_sans) !important;
+}
+
+/* Header Animation */
+.header-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 399;
+  animation-name: fadeDown;
+  animation-duration: 1s;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  padding-left: 8px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: #62a230;
+}
+
+.scrollbar-0::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  padding-left: 4px;
+  background-color: transparent;
+}
+
+.scrollbar-sm::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  padding-left: 4px;
+  background-color: transparent;
+}
+
+/* Button and Input Styles */
+button {
+  line-height: 0px;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+/* Remove number input spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Webkit specific styles */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+  margin: 0;
+}
+
+/* Firefox specific styles */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
